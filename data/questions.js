@@ -2031,5 +2031,203 @@ window.QUESTION_POOL = [
     "answer": 0,
     "explanation": "Correct answer: Coffee cup.",
     "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-142",
+    "category": "Meal Service",
+    "difficulty": "Medium",
+    "question": "Danish pastries should be served how?",
+    "options": [
+      "Warm",
+      "Chilled",
+      "At room temperature",
+      "With ice water"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Warm.",
+    "source": "Uploaded ZIP: CBT.pdf"
+  },
+  {
+    "id": "jcl-143",
+    "category": "Equipment",
+    "difficulty": "Easy",
+    "question": "The proper method of holding Atlas equipment is by the base. True or false?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: True.",
+    "source": "Uploaded ZIP: JC99 CBT study this.pdf"
+  },
+  {
+    "id": "jcl-144",
+    "category": "Meal Service",
+    "difficulty": "Medium",
+    "question": "A main course in a square plate is recommended to be served with what item?",
+    "options": [
+      "Plate tong",
+      "Dessert spoon",
+      "Bread tong",
+      "Sauce boat"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Plate tong.",
+    "source": "Uploaded ZIP: JC99 CBT study this.pdf"
+  },
+  {
+    "id": "jcl-145",
+    "category": "Cabin Procedures",
+    "difficulty": "Easy",
+    "question": "Table liners are uplifted for BKK turns. True or false?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "explanation": "Correct answer: False.",
+    "source": "Uploaded ZIP: JC99 CBT study this.pdf"
+  },
+  {
+    "id": "jcl-146",
+    "category": "Beverages",
+    "difficulty": "Medium",
+    "question": "Ground drinks are served with which glass?",
+    "options": [
+      "Wine glass",
+      "Water glass",
+      "Champagne flute",
+      "Whiskey tumbler"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Wine glass.",
+    "source": "Uploaded ZIP: JC99 CBT study this.pdf"
+  },
+  {
+    "id": "jcl-147",
+    "category": "Meal Service",
+    "difficulty": "Medium",
+    "question": "Which cheeses are examples of semi-soft cheese?",
+    "options": [
+      "Monterey Jack and Port Salut",
+      "Cheddar and Gouda",
+      "Brie and Camembert",
+      "Stilton and Roquefort"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Monterey Jack and Port Salut.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-148",
+    "category": "Meal Service",
+    "difficulty": "Medium",
+    "question": "Polenta is corn meal cooked by what method?",
+    "options": [
+      "Boiling to a paste",
+      "Deep-frying until crisp",
+      "Baking in paper",
+      "Steaming with stock"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Boiling to a paste.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-149",
+    "category": "Meal Service",
+    "difficulty": "Easy",
+    "question": "Port must always be offered when cheese is featured in JCL. True or false?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "explanation": "Correct answer: False.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-150",
+    "category": "Beverages",
+    "difficulty": "Medium",
+    "question": "True Champagne is made by which method?",
+    "options": [
+      "Méthode champenoise, with second fermentation in bottle",
+      "Fortification with brandy",
+      "Direct carbonation in tank",
+      "Single fermentation only"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Méthode champenoise, with second fermentation in bottle.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-151",
+    "category": "Meal Service",
+    "difficulty": "Easy",
+    "question": "After take-off drinks should be accompanied by either mixed nuts or satay. True or false?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: True.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-152",
+    "category": "Meal Service",
+    "difficulty": "Easy",
+    "question": "When Hanakoireki is featured in JCL meal service, main course trays are always prepared and served from the galley. True or false?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: True.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-153",
+    "category": "Meal Service",
+    "difficulty": "Easy",
+    "question": "Bread must be offered to passengers for Hanakoireki. True or false?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "explanation": "Correct answer: False.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-154",
+    "category": "Meal Service",
+    "difficulty": "Medium",
+    "question": "Past issues of which newspapers are available on request?",
+    "options": [
+      "The Straits Times and Business Times",
+      "The New Paper and TODAY",
+      "Financial Times and Wall Street Journal",
+      "The Business Times and TODAY"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: The Straits Times and Business Times.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-155",
+    "category": "Cabin Procedures",
+    "difficulty": "Medium",
+    "question": "For which flight sectors should eyeshades, slippers and tube socks be preset on the passenger seat?",
+    "options": [
+      "Flight sectors above 5 hours",
+      "All flights",
+      "Only night flights",
+      "Only flights above 8 hours"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Flight sectors above 5 hours.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
   }
 ];
