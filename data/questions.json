@@ -1451,5 +1451,585 @@
     "answer": 1,
     "explanation": "Correct answer: butter dish or chip.",
     "source": "Uploaded JCL CBT PDFs"
+  },
+  {
+    "id": "jcl-102",
+    "category": "Beverages",
+    "difficulty": "Easy",
+    "question": "For flights departing at 1000 hrs, are champagne, orange juice and welcome drinks served on ground?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: True.",
+    "source": "Uploaded ZIP: CBT.pdf"
+  },
+  {
+    "id": "jcl-103",
+    "category": "Meal Service",
+    "difficulty": "Hard",
+    "question": "When presenting a tray to a Japanese passenger, how should chopsticks be placed?",
+    "options": [
+      "Not placed vertically, as this is associated with prayers and funeral rites",
+      "Placed vertically in the rice bowl",
+      "Placed under the tray linen",
+      "Omitted unless requested"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Not placed vertically, as this is associated with prayers and funeral rites.",
+    "source": "Uploaded ZIP: CBT.pdf"
+  },
+  {
+    "id": "jcl-104",
+    "category": "Meal Service",
+    "difficulty": "Medium",
+    "question": "For breakfast tray service, preserves are uplifted how?",
+    "options": [
+      "In bulk on the entrée cart",
+      "Individually on every tray",
+      "Only on request from the galley",
+      "With the cheese course"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: In bulk on the entrée cart.",
+    "source": "Uploaded ZIP: CBT.pdf"
+  },
+  {
+    "id": "jcl-105",
+    "category": "Meal Service",
+    "difficulty": "Medium",
+    "question": "Cheese should be served how long after taking it out from the fridge?",
+    "options": [
+      "Immediately",
+      "15 minutes",
+      "30 minutes",
+      "60 minutes"
+    ],
+    "answer": 2,
+    "explanation": "Correct answer: 30 minutes.",
+    "source": "Uploaded ZIP: CBT.pdf"
+  },
+  {
+    "id": "jcl-106",
+    "category": "Food Preparation",
+    "difficulty": "Medium",
+    "question": "How long should sandwiches be heated?",
+    "options": [
+      "4 minutes",
+      "6 minutes",
+      "8–10 minutes",
+      "15 minutes"
+    ],
+    "answer": 2,
+    "explanation": "Correct answer: 8–10 minutes.",
+    "source": "Uploaded ZIP: CBT.pdf"
+  },
+  {
+    "id": "jcl-107",
+    "category": "Beverages",
+    "difficulty": "Medium",
+    "question": "What are the seven types of glassware used in JCL?",
+    "options": [
+      "Water glass, wine glass, brandy goblet, whiskey tumbler, multi-purpose glass, shot glass and champagne flute",
+      "Water glass, wine glass, beer mug, tea cup, shot glass, tumbler and saucer",
+      "Champagne flute, coffee cup, sake cup, wine glass, soup cup, shot glass and water glass",
+      "Brandy goblet, port glass, dessert bowl, tumbler, mug, flute and side plate"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Water glass, wine glass, brandy goblet, whiskey tumbler, multi-purpose glass, shot glass and champagne flute.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-108",
+    "category": "Cabin Procedures",
+    "difficulty": "Medium",
+    "question": "Passengers can access the companion app through what?",
+    "options": [
+      "The SingaporeAir app",
+      "The KrisWorld handset only",
+      "The seat control panel",
+      "The crew call panel"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: The SingaporeAir app.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-109",
+    "category": "JCL CBT",
+    "difficulty": "Medium",
+    "question": "Which ICP chefs are Michelin-star rated?",
+    "options": [
+      "Yoshihiro Murata / George Blanc",
+      "Alfred Portale / Gordon Ramsay",
+      "Nancy Silverton / Wolfgang Puck",
+      "Georges Blanc / Jamie Oliver"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Yoshihiro Murata / George Blanc.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-110",
+    "category": "Meal Service",
+    "difficulty": "Medium",
+    "question": "Bel Paese is what type of cheese?",
+    "options": [
+      "Italian cheese",
+      "French blue cheese",
+      "Dutch hard cheese",
+      "German soft cheese"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Italian cheese.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-111",
+    "category": "Meal Service",
+    "difficulty": "Easy",
+    "question": "Should bulk-uplifted cheese be pre-cut before service?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "explanation": "Correct answer: False.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-112",
+    "category": "Meal Service",
+    "difficulty": "Medium",
+    "question": "Which of the following is generally not offered during the cheese course?",
+    "options": [
+      "Champagne",
+      "Port",
+      "Red wine",
+      "White wine"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Champagne.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-113",
+    "category": "Meal Service",
+    "difficulty": "Medium",
+    "question": "Which cheeses are examples of blue cheese?",
+    "options": [
+      "Stilton and Roquefort",
+      "Brie and Camembert",
+      "Cheddar and Gouda",
+      "Emmental and Bel Paese"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Stilton and Roquefort.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-114",
+    "category": "Meal Service",
+    "difficulty": "Medium",
+    "question": "Which cheeses are examples of soft cheese?",
+    "options": [
+      "Brie, Camembert and Boursin",
+      "Cheddar, Emmental and Gouda",
+      "Stilton and Roquefort",
+      "Parmesan and Pecorino"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Brie, Camembert and Boursin.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-115",
+    "category": "Meal Service",
+    "difficulty": "Medium",
+    "question": "Which cheeses are examples of semi-hard or hard cheese?",
+    "options": [
+      "Cheddar, Emmental and Gouda",
+      "Brie, Camembert and Boursin",
+      "Stilton and Roquefort",
+      "Mascarpone and Ricotta"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Cheddar, Emmental and Gouda.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-116",
+    "category": "Meal Service",
+    "difficulty": "Medium",
+    "question": "Gouda cheese originates from where?",
+    "options": [
+      "Holland",
+      "France",
+      "Italy",
+      "Germany"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Holland.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-117",
+    "category": "Meal Service",
+    "difficulty": "Medium",
+    "question": "Roquefort and Cambozola are classified as what?",
+    "options": [
+      "Blue cheese",
+      "Soft cheese",
+      "Hard cheese",
+      "Fresh cheese"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Blue cheese.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-118",
+    "category": "Cabin Procedures",
+    "difficulty": "Easy",
+    "question": "If seats cannot operate electrically but work in manual mode, should they still be logged as defective in the CDL for engineers to investigate?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: True.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-119",
+    "category": "Cabin Procedures",
+    "difficulty": "Medium",
+    "question": "In 350MH seats, passengers need to strap on the 3-point seatbelt during what phase?",
+    "options": [
+      "Taxi, take-off and landing only",
+      "Throughout the whole flight",
+      "Only during turbulence",
+      "Only during landing"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Taxi, take-off and landing only.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-120",
+    "category": "Cabin Procedures",
+    "difficulty": "Medium",
+    "question": "A mattress topper is pre-set on JCL Diamond Next Generation seats for which flights?",
+    "options": [
+      "Direct USA flights only",
+      "All flights above 5 hours",
+      "All night flights",
+      "Only Europe flights"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Direct USA flights only.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-121",
+    "category": "Cabin Procedures",
+    "difficulty": "Medium",
+    "question": "How many manual override levers are located on B773ER and A380 Diamond seats?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 1,
+    "explanation": "Correct answer: 2.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-122",
+    "category": "Cabin Procedures",
+    "difficulty": "Medium",
+    "question": "When should the ISPS switch be turned on?",
+    "options": [
+      "Only after take-off",
+      "Before boarding",
+      "During taxi",
+      "Only before landing"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Only after take-off.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-123",
+    "category": "Cabin Procedures",
+    "difficulty": "Medium",
+    "question": "Integrated iPod support is provided with which seat?",
+    "options": [
+      "Weber seat",
+      "SpaceBed",
+      "Diamond seat only",
+      "Economy seat"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Weber seat.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-124",
+    "category": "Cabin Procedures",
+    "difficulty": "Easy",
+    "question": "What is the cover colour of the IFE emergency switch?",
+    "options": [
+      "Red",
+      "Blue",
+      "Green",
+      "Yellow"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Red.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-125",
+    "category": "Cabin Procedures",
+    "difficulty": "Medium",
+    "question": "Where is the DND function found?",
+    "options": [
+      "Seat control panel",
+      "IFE handset only",
+      "Overhead panel",
+      "Galley control panel"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Seat control panel.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-126",
+    "category": "Cabin Procedures",
+    "difficulty": "Medium",
+    "question": "For SpaceBed, what must be stowed before making the seat into bed mode?",
+    "options": [
+      "Tray table",
+      "Headset",
+      "Blanket",
+      "Literature pocket"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Tray table.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-127",
+    "category": "Cabin Procedures",
+    "difficulty": "Hard",
+    "question": "If a SpaceBed seat is unable to recline, what should be done?",
+    "options": [
+      "Turn the solenoid lever to 45 degrees and anticlockwise to release",
+      "Press attendant-call-cancel twice",
+      "Reset using only the TTL button",
+      "Move the tray table to the upright position only"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Turn the solenoid lever to 45 degrees and anticlockwise to release.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-128",
+    "category": "Cabin Procedures",
+    "difficulty": "Easy",
+    "question": "Must the lateral bi-fold tray table of the SpaceBed be stowed before the seat is reclined?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: True.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-129",
+    "category": "Beverages",
+    "difficulty": "Medium",
+    "question": "Inflight, technical crew are offered drinks at regular intervals of about how long?",
+    "options": [
+      "30 minutes",
+      "45 minutes",
+      "60 minutes",
+      "90 minutes"
+    ],
+    "answer": 1,
+    "explanation": "Correct answer: 45 minutes.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-130",
+    "category": "Meal Service",
+    "difficulty": "Easy",
+    "question": "For tray service, crew do not need to include the chopstick rest and soup spoon base. True or false?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: True.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-131",
+    "category": "Meal Service",
+    "difficulty": "Easy",
+    "question": "Milk for the cereal and yoghurt course is served on the cart for JCL breakfast service. True or false?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: True.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-132",
+    "category": "Meal Service",
+    "difficulty": "Easy",
+    "question": "Special meal main courses must be served before other main courses. True or false?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "explanation": "Correct answer: False.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-133",
+    "category": "Meal Service",
+    "difficulty": "Easy",
+    "question": "Crew should accept a passenger request to have a meal both after take-off and before landing. True or false?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: True.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-134",
+    "category": "Meal Service",
+    "difficulty": "Easy",
+    "question": "Wet wipes are served on request to passengers for satay service. True or false?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "explanation": "Correct answer: False.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-135",
+    "category": "Food Preparation",
+    "difficulty": "Medium",
+    "question": "What does julienne mean?",
+    "options": [
+      "Vegetables, meat or fruits cut into strips as garnish",
+      "Food wrapped in paper and baked",
+      "Fruit cooked into a stew",
+      "Sauce thickened with stock and flour"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Vegetables, meat or fruits cut into strips as garnish.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-136",
+    "category": "Beverages",
+    "difficulty": "Easy",
+    "question": "Are swizzle sticks required for all alcoholic cocktails served in a brandy glass?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "explanation": "Correct answer: False.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-137",
+    "category": "Beverages",
+    "difficulty": "Medium",
+    "question": "A passenger requesting English tea at the end of lunch service should be served with what?",
+    "options": [
+      "Short mug",
+      "Water glass",
+      "Wine glass",
+      "Coffee cup and saucer"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Short mug.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-138",
+    "category": "Meal Service",
+    "difficulty": "Medium",
+    "question": "Satay is displayed in what dish?",
+    "options": [
+      "Gratin dish",
+      "Dessert bowl",
+      "Butter dish",
+      "Bread basket"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Gratin dish.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-139",
+    "category": "Equipment",
+    "difficulty": "Medium",
+    "question": "A large bowl should be presented with what?",
+    "options": [
+      "Base plate and cover",
+      "Saucer and teaspoon",
+      "Butter dish and side plate",
+      "Wine glass and coaster"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Base plate and cover.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-140",
+    "category": "Equipment",
+    "difficulty": "Medium",
+    "question": "A dip dish is used for what?",
+    "options": [
+      "Dish with gravy",
+      "Bread roll",
+      "Fruit garnish",
+      "Coffee service"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Dish with gravy.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
+  },
+  {
+    "id": "jcl-141",
+    "category": "Beverages",
+    "difficulty": "Medium",
+    "question": "When preparing a double espresso, crew should use two separate espresso pods and serve it in what?",
+    "options": [
+      "Coffee cup",
+      "Water glass",
+      "Wine glass",
+      "Short mug"
+    ],
+    "answer": 0,
+    "explanation": "Correct answer: Coffee cup.",
+    "source": "Uploaded ZIP: JCL CBT Merged.pdf"
   }
 ]
