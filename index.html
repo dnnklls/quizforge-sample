@@ -142,21 +142,22 @@
     }
   </style>
 </head>
-<body onload="startQuiz()">
+<body>
   <nav class="nav"><div class="nav-inner"><div class="wordmark">Thirty</div><div class="nav-actions"><button class="secondary mini" onclick="openPool()">Question bank</button><button class="secondary mini" onclick="startQuiz()">New set</button></div></div></nav>
 
   <main class="wrap">
     <section class="hero" id="home">
-      <div class="eyebrow">Quiz practice, redesigned.</div>
-      <h1>One clean quiz. Thirty random questions.</h1>
-      <p class="lead">A calmer practice experience for exams, training, onboarding, or certification prep. It pulls a fresh set from your question bank, tracks progress, and turns every result into a review plan.</p>
+      <div class="eyebrow">JCL CBT practice</div>
+      <h1>Ready for 30 questions?</h1>
+      <p class="lead">A fresh random set from the question pool. Practice mode shows the correct answer immediately.</p>
       <div class="hero-actions">
-        <button class="primary" onclick="startQuiz()">Start sample quiz</button>
-        <button class="secondary" onclick="openPool()">Edit question bank</button>
+        <button class="primary" onclick="startQuiz()">Start quiz</button>
+        <button class="secondary" onclick="openPool()">Question bank</button>
       </div>
+      <div style="margin-top:18px;color:var(--muted);font-size:14px">101 questions · random 30 · instant feedback</div>
     </section>
 
-    <section class="stage" id="marketing">
+    <section class="stage" id="marketing" style="display:none">
       <div class="preview-grid">
         <div class="phone-wrap glass">
           <div class="phone">
