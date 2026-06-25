@@ -140,7 +140,7 @@
               <div class="phone-content">
                 <div class="status-line"><span>9:41</span><span>●●● 100%</span></div>
                 <h2 class="mini-title">Today’s set is ready.</h2>
-                <p style="color:var(--muted);line-height:1.42;margin:0">30 questions selected from 40 in the pool. Mixed categories. Instant review at the end.</p>
+                <p style="color:var(--muted);line-height:1.42;margin:0">30 questions selected from 101 in the pool. Mixed categories. Instant review at the end.</p>
                 <div class="metric-row">
                   <div class="metric"><strong>30</strong><span>items</span></div>
                   <div class="metric"><strong>12m</strong><span>target</span></div>
@@ -197,8 +197,10 @@
 
   <dialog id="bankDialog"><div class="modal"><h2 style="margin-top:0">Question bank</h2><p style="color:var(--muted)">Paste a larger JSON array here. A real version would use an admin uploader or database.</p><textarea id="bankEditor"></textarea><div class="hero-actions" style="justify-content:flex-start"><button class="primary" onclick="savePool()">Save bank</button><button class="secondary" onclick="bankDialog.close()">Close</button></div></div></dialog>
 
+  <script src="data/questions.js"></script>
   <script>
-    let pool = [
+    let pool = (window.QUESTION_POOL || []).map((x,i)=>({id:x.id||i+1,c:x.category,d:x.difficulty,q:x.question,o:x.options,a:x.answer,e:x.explanation}));
+    if (!pool.length) pool = [
       ['Product','Easy','What is the main benefit of randomizing quiz questions?',['It makes grading impossible','It reduces memorization and repeated answer-pattern cheating','It removes explanations','It guarantees every quiz is easier'],1,'Randomization creates fresher attempts and makes answer-pattern memorization less useful.'],
       ['Product','Medium','Which feature best helps a learner improve after a quiz?',['A pretty landing page','A review screen with explanations for wrong answers','Hiding the score','Removing hard questions'],1,'Explanations turn the result into learning, not just measurement.'],
       ['UX','Easy','Why show progress during a 30-question quiz?',['To increase anxiety','To help users pace themselves','To make the site slower','To replace navigation'],1,'Progress reduces uncertainty and helps people manage time.'],
