@@ -3,249 +3,275 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>QuizForge — 30 Random Questions</title>
+  <title>Thirty — Random Quiz Practice</title>
   <style>
     :root {
-      --bg: #0b1020;
-      --panel: #11182e;
-      --panel-2: #17213d;
-      --text: #eef3ff;
-      --muted: #9aa8c7;
-      --line: rgba(255,255,255,.11);
-      --accent: #6ee7f9;
-      --accent-2: #a78bfa;
-      --good: #35d399;
-      --bad: #fb7185;
-      --warn: #fbbf24;
-      --shadow: 0 24px 80px rgba(0,0,0,.35);
+      --bg: #f5f5f7;
+      --ink: #1d1d1f;
+      --muted: #6e6e73;
+      --hairline: rgba(0,0,0,.10);
+      --card: rgba(255,255,255,.74);
+      --blue: #007aff;
+      --green: #34c759;
+      --red: #ff3b30;
+      --orange: #ff9500;
+      --shadow: 0 30px 80px rgba(0,0,0,.12);
+      --radius: 28px;
     }
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      min-height: 100vh;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", Inter, system-ui, sans-serif;
+      color: var(--ink);
       background:
-        radial-gradient(circle at top left, rgba(103,232,249,.22), transparent 34rem),
-        radial-gradient(circle at top right, rgba(167,139,250,.18), transparent 32rem),
-        var(--bg);
-      color: var(--text);
+        radial-gradient(circle at 18% 8%, rgba(0,122,255,.18), transparent 28rem),
+        radial-gradient(circle at 86% 16%, rgba(175,82,222,.16), transparent 24rem),
+        linear-gradient(180deg, #fbfbfd, var(--bg));
+      min-height: 100vh;
     }
-    .wrap { width: min(1120px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 56px; }
-    header { display: flex; justify-content: space-between; align-items: center; gap: 18px; margin-bottom: 28px; }
-    .brand { display: flex; align-items: center; gap: 12px; }
-    .logo { width: 42px; height: 42px; border-radius: 14px; background: linear-gradient(135deg, var(--accent), var(--accent-2)); display: grid; place-items: center; color: #07111f; font-weight: 900; box-shadow: 0 12px 36px rgba(110,231,249,.22); }
-    h1 { font-size: clamp(34px, 6vw, 72px); line-height: .92; margin: 0 0 18px; letter-spacing: -0.065em; }
-    h2 { margin: 0 0 12px; font-size: 22px; letter-spacing: -.03em; }
-    p { color: var(--muted); line-height: 1.6; margin: 0; }
-    .pill { border: 1px solid var(--line); background: rgba(255,255,255,.06); color: var(--muted); padding: 9px 12px; border-radius: 999px; font-size: 13px; }
-    .hero { display: grid; grid-template-columns: 1.08fr .92fr; gap: 22px; align-items: stretch; }
-    .card { background: rgba(17,24,46,.82); border: 1px solid var(--line); border-radius: 28px; box-shadow: var(--shadow); backdrop-filter: blur(18px); }
-    .intro { padding: 34px; min-height: 430px; display: flex; flex-direction: column; justify-content: space-between; }
-    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+    .nav {
+      position: sticky; top: 0; z-index: 30;
+      background: rgba(251,251,253,.72);
+      backdrop-filter: saturate(180%) blur(22px);
+      border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+    .nav-inner { width: min(1180px, calc(100% - 36px)); margin: 0 auto; height: 54px; display: flex; align-items: center; justify-content: space-between; }
+    .wordmark { font-weight: 700; letter-spacing: -.02em; }
+    .nav-actions { display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: 14px; }
+    .wrap { width: min(1180px, calc(100% - 36px)); margin: 0 auto; }
+    .hero { padding: 74px 0 38px; text-align: center; }
+    .eyebrow { color: var(--blue); font-weight: 700; letter-spacing: -.01em; margin-bottom: 12px; }
+    h1 { font-size: clamp(48px, 8vw, 104px); line-height: .94; letter-spacing: -.075em; margin: 0 auto 20px; max-width: 980px; }
+    .lead { max-width: 710px; margin: 0 auto; font-size: clamp(19px, 2.2vw, 25px); line-height: 1.36; color: var(--muted); letter-spacing: -.025em; }
+    .hero-actions { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
     button, select {
-      border: 0; border-radius: 16px; padding: 14px 18px; color: var(--text); background: var(--panel-2); font: inherit; cursor: pointer;
+      font: inherit; border: 0; border-radius: 999px; padding: 12px 18px; cursor: pointer;
+      background: rgba(0,0,0,.06); color: var(--ink);
+      transition: transform .18s ease, background .18s ease, box-shadow .18s ease;
     }
-    button.primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #07111f; font-weight: 800; }
-    button.ghost { border: 1px solid var(--line); background: rgba(255,255,255,.05); }
-    button:disabled { opacity: .45; cursor: not-allowed; }
-    .features { padding: 26px; display: grid; gap: 14px; }
-    .feature { padding: 18px; border-radius: 20px; background: rgba(255,255,255,.045); border: 1px solid var(--line); }
-    .feature b { display: block; margin-bottom: 6px; }
-    .quiz { margin-top: 24px; display: none; grid-template-columns: 280px 1fr; gap: 22px; }
-    .side { padding: 22px; position: sticky; top: 18px; height: fit-content; }
-    .stat { display: flex; justify-content: space-between; padding: 13px 0; border-bottom: 1px solid var(--line); color: var(--muted); }
-    .stat strong { color: var(--text); }
-    .bar { height: 10px; background: rgba(255,255,255,.08); border-radius: 99px; overflow: hidden; margin: 16px 0 8px; }
-    .bar span { display: block; height: 100%; width: 0%; background: linear-gradient(90deg, var(--accent), var(--accent-2)); transition: width .25s ease; }
-    .question { padding: 28px; }
-    .qtop { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; margin-bottom: 22px; }
-    .tag { color: #06111f; background: var(--accent); padding: 6px 10px; border-radius: 99px; font-weight: 800; font-size: 12px; }
-    .question h2 { font-size: clamp(25px, 3.2vw, 42px); line-height: 1.05; }
-    .options { display: grid; gap: 12px; margin-top: 22px; }
-    .option { text-align: left; border: 1px solid var(--line); background: rgba(255,255,255,.045); padding: 17px; border-radius: 18px; }
-    .option.selected { outline: 2px solid var(--accent); background: rgba(110,231,249,.12); }
-    .option.correct { outline: 2px solid var(--good); background: rgba(53,211,153,.12); }
-    .option.wrong { outline: 2px solid var(--bad); background: rgba(251,113,133,.12); }
-    .explain { display: none; margin-top: 18px; padding: 16px; border-radius: 18px; border: 1px solid rgba(110,231,249,.28); background: rgba(110,231,249,.08); color: #cdefff; }
-    .nav { display: flex; justify-content: space-between; gap: 12px; margin-top: 22px; }
-    .grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; margin-top: 14px; }
-    .dot { height: 34px; padding: 0; border-radius: 11px; font-size: 12px; background: rgba(255,255,255,.07); color: var(--muted); }
-    .dot.done { color: #07111f; background: var(--accent); }
-    .results { display: none; padding: 32px; margin-top: 24px; }
-    .score { font-size: clamp(50px, 9vw, 110px); line-height: .9; letter-spacing: -.08em; margin: 12px 0; }
-    .review { display: grid; gap: 12px; margin-top: 24px; }
-    .review-item { border: 1px solid var(--line); border-radius: 18px; padding: 16px; background: rgba(255,255,255,.04); }
-    textarea { width: 100%; min-height: 180px; resize: vertical; background: #090d1a; color: var(--text); border: 1px solid var(--line); border-radius: 18px; padding: 16px; font: 13px ui-monospace, SFMono-Regular, Menlo, monospace; }
-    dialog { width: min(720px, calc(100% - 24px)); border: 1px solid var(--line); border-radius: 24px; padding: 0; color: var(--text); background: var(--panel); box-shadow: var(--shadow); }
-    dialog::backdrop { background: rgba(0,0,0,.62); }
-    .modal { padding: 24px; }
-    @media (max-width: 860px) { .hero, .quiz { grid-template-columns: 1fr; } .side { position: static; } header { align-items: flex-start; flex-direction: column; } }
+    button:hover { transform: translateY(-1px); }
+    .primary { background: var(--blue); color: white; box-shadow: 0 12px 30px rgba(0,122,255,.24); }
+    .secondary { background: rgba(255,255,255,.7); border: 1px solid rgba(0,0,0,.08); }
+    .stage { padding: 22px 0 70px; }
+    .preview-grid { display: grid; grid-template-columns: .95fr 1.05fr; gap: 22px; align-items: stretch; }
+    .glass {
+      background: var(--card); backdrop-filter: saturate(180%) blur(28px);
+      border: 1px solid rgba(255,255,255,.9);
+      box-shadow: var(--shadow); border-radius: var(--radius);
+    }
+    .phone-wrap { padding: 28px; display: grid; place-items: center; min-height: 650px; }
+    .phone {
+      width: min(390px, 100%); height: 760px; border-radius: 54px; padding: 12px;
+      background: #111; box-shadow: 0 32px 80px rgba(0,0,0,.22), inset 0 0 0 1px rgba(255,255,255,.14);
+      position: relative;
+    }
+    .screen { height: 100%; overflow: hidden; border-radius: 42px; background: #fbfbfd; position: relative; }
+    .island { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); width: 118px; height: 34px; border-radius: 999px; background: #050505; z-index: 5; }
+    .phone-content { padding: 58px 20px 20px; height: 100%; display: flex; flex-direction: column; }
+    .status-line { display: flex; justify-content: space-between; align-items: center; color: var(--muted); font-size: 13px; margin-bottom: 18px; }
+    .mini-title { font-size: 34px; line-height: .98; letter-spacing: -.055em; margin: 0 0 8px; }
+    .metric-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 18px 0; }
+    .metric { background: white; border: 1px solid rgba(0,0,0,.06); border-radius: 18px; padding: 12px; }
+    .metric strong { display: block; font-size: 20px; letter-spacing: -.04em; }
+    .metric span { color: var(--muted); font-size: 12px; }
+    .sample-card { background: white; border-radius: 24px; padding: 18px; border: 1px solid rgba(0,0,0,.06); box-shadow: 0 12px 32px rgba(0,0,0,.06); margin-top: 4px; }
+    .sample-card b { display: block; font-size: 19px; line-height: 1.18; letter-spacing: -.025em; margin-bottom: 14px; }
+    .choice { padding: 13px; border-radius: 15px; background: #f2f2f7; margin-top: 8px; color: #3a3a3c; font-size: 14px; }
+    .choice.active { background: rgba(0,122,255,.12); color: var(--blue); outline: 1px solid rgba(0,122,255,.24); }
+    .bottom-tabs { margin-top: auto; height: 62px; border-radius: 24px; background: rgba(255,255,255,.82); border: 1px solid rgba(0,0,0,.06); display: flex; align-items: center; justify-content: space-around; color: var(--muted); font-size: 11px; }
+    .tab-on { color: var(--blue); font-weight: 700; }
+    .panel { padding: 34px; }
+    .panel h2 { font-size: clamp(34px, 4vw, 56px); line-height: .98; letter-spacing: -.06em; margin: 0 0 14px; }
+    .feature-list { display: grid; gap: 12px; margin-top: 26px; }
+    .feature { display: grid; grid-template-columns: 38px 1fr; gap: 14px; align-items: start; padding: 16px; border-radius: 22px; background: rgba(255,255,255,.74); border: 1px solid rgba(0,0,0,.06); }
+    .glyph { width: 38px; height: 38px; border-radius: 13px; display: grid; place-items: center; background: rgba(0,122,255,.11); color: var(--blue); font-weight: 800; }
+    .feature b { display: block; margin-bottom: 4px; letter-spacing: -.02em; }
+    .feature p { margin: 0; color: var(--muted); line-height: 1.38; }
+    .quiz-view, .results-view { display: none; padding: 28px 0 70px; }
+    .quiz-shell { display: grid; grid-template-columns: 300px 1fr; gap: 22px; align-items: start; }
+    .sidebar, .question-card, .results-card { padding: 24px; }
+    .progress { height: 8px; border-radius: 999px; background: rgba(0,0,0,.07); overflow: hidden; margin: 16px 0 20px; }
+    .progress span { height: 100%; display: block; width: 0%; background: var(--blue); transition: width .25s ease; }
+    .side-stat { padding: 14px 0; border-top: 1px solid rgba(0,0,0,.07); display: flex; justify-content: space-between; color: var(--muted); }
+    .side-stat strong { color: var(--ink); }
+    .dots { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-top: 16px; }
+    .dot { aspect-ratio: 1; padding: 0; border-radius: 14px; font-size: 13px; background: rgba(0,0,0,.055); color: var(--muted); }
+    .dot.done { background: var(--blue); color: #fff; }
+    .dot.current { outline: 2px solid rgba(0,122,255,.28); }
+    .q-meta { display: flex; justify-content: space-between; gap: 12px; color: var(--muted); margin-bottom: 18px; }
+    .question-card h2 { font-size: clamp(32px, 4.7vw, 62px); line-height: 1.02; letter-spacing: -.065em; margin: 0 0 22px; }
+    .options { display: grid; gap: 10px; }
+    .option { text-align: left; border-radius: 19px; padding: 17px 18px; background: rgba(255,255,255,.78); border: 1px solid rgba(0,0,0,.07); color: var(--ink); }
+    .option.selected { background: rgba(0,122,255,.10); border-color: rgba(0,122,255,.36); color: #0057c2; }
+    .explanation { display: none; margin-top: 16px; padding: 16px; border-radius: 20px; background: rgba(52,199,89,.10); color: #1f7a3a; border: 1px solid rgba(52,199,89,.18); line-height: 1.45; }
+    .question-actions { display: flex; justify-content: space-between; gap: 12px; margin-top: 20px; }
+    .score { font-size: clamp(72px, 13vw, 150px); line-height: .86; letter-spacing: -.09em; margin: 12px 0; }
+    .review-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 22px; }
+    .review-item { background: rgba(255,255,255,.78); border: 1px solid rgba(0,0,0,.07); border-radius: 22px; padding: 16px; }
+    .review-item p { color: var(--muted); line-height: 1.42; margin: 7px 0 0; }
+    dialog { width: min(760px, calc(100% - 24px)); border: 0; border-radius: 28px; padding: 0; background: rgba(251,251,253,.92); backdrop-filter: blur(28px); box-shadow: var(--shadow); }
+    dialog::backdrop { background: rgba(0,0,0,.28); backdrop-filter: blur(8px); }
+    .modal { padding: 26px; }
+    textarea { width: 100%; min-height: 260px; border: 1px solid rgba(0,0,0,.12); border-radius: 20px; padding: 16px; font: 13px ui-monospace, SFMono-Regular, Menlo, monospace; background: white; color: var(--ink); resize: vertical; }
+    @media (max-width: 920px) { .preview-grid, .quiz-shell { grid-template-columns: 1fr; } .phone-wrap { min-height: auto; } .review-grid { grid-template-columns: 1fr; } h1 { letter-spacing: -.06em; } }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand"><div class="logo">Q</div><div><b>QuizForge</b><p>Random 30-question practice tests</p></div></div>
-      <span class="pill">Sample MVP · no backend needed</span>
-    </header>
+  <nav class="nav"><div class="nav-inner"><div class="wordmark">Thirty</div><div class="nav-actions"><span>30 questions</span><span>·</span><span>randomized</span></div></div></nav>
 
-    <section class="hero card" id="home">
-      <div class="intro">
-        <div>
-          <span class="pill">30 random questions from a larger pool</span>
-          <h1>Fast quizzes that feel like a real exam.</h1>
-          <p>Users get a fresh randomized set, timed practice mode, instant explanations, progress tracking, score review, and a way to paste in a bigger question bank later.</p>
-          <div class="actions">
-            <button class="primary" onclick="startQuiz()">Start 30-question quiz</button>
-            <button class="ghost" onclick="openPool()">Edit question pool</button>
+  <main class="wrap">
+    <section class="hero" id="home">
+      <div class="eyebrow">Quiz practice, redesigned.</div>
+      <h1>One clean quiz. Thirty random questions.</h1>
+      <p class="lead">A calmer practice experience for exams, training, onboarding, or certification prep. It pulls a fresh set from your question bank, tracks progress, and turns every result into a review plan.</p>
+      <div class="hero-actions">
+        <button class="primary" onclick="startQuiz()">Start sample quiz</button>
+        <button class="secondary" onclick="openPool()">Edit question bank</button>
+      </div>
+    </section>
+
+    <section class="stage" id="marketing">
+      <div class="preview-grid">
+        <div class="phone-wrap glass">
+          <div class="phone">
+            <div class="island"></div>
+            <div class="screen">
+              <div class="phone-content">
+                <div class="status-line"><span>9:41</span><span>●●● 100%</span></div>
+                <h2 class="mini-title">Today’s set is ready.</h2>
+                <p style="color:var(--muted);line-height:1.42;margin:0">30 questions selected from 40 in the pool. Mixed categories. Instant review at the end.</p>
+                <div class="metric-row">
+                  <div class="metric"><strong>30</strong><span>items</span></div>
+                  <div class="metric"><strong>12m</strong><span>target</span></div>
+                  <div class="metric"><strong>8</strong><span>topics</span></div>
+                </div>
+                <div class="sample-card">
+                  <b>Which product feature most improves learning after a quiz?</b>
+                  <div class="choice">A. A larger logo</div>
+                  <div class="choice active">B. Review with explanations</div>
+                  <div class="choice">C. Hiding the score</div>
+                  <div class="choice">D. Fewer questions</div>
+                </div>
+                <div class="bottom-tabs"><span class="tab-on">Quiz</span><span>Review</span><span>Stats</span><span>Bank</span></div>
+              </div>
+            </div>
           </div>
         </div>
-        <p>Good additions for live version: user accounts, leaderboard, spaced repetition, admin uploader, CSV import, weak-topic analytics, shareable result link.</p>
-      </div>
-      <div class="features">
-        <div class="feature"><b>Randomized test generation</b><p>Each run samples 30 questions without repeats from the pool.</p></div>
-        <div class="feature"><b>Timer + progress</b><p>Built-in timer, answered count, and question navigator.</p></div>
-        <div class="feature"><b>Review mode</b><p>Users see missed questions, correct answers, and explanations.</p></div>
-        <div class="feature"><b>Question-bank editor</b><p>Prototype includes JSON editing so a bigger pool can be pasted in.</p></div>
-      </div>
-    </section>
-
-    <section class="quiz" id="quiz">
-      <aside class="side card">
-        <h2>Quiz status</h2>
-        <div class="bar"><span id="progress"></span></div>
-        <div class="stat"><span>Answered</span><strong id="answered">0 / 30</strong></div>
-        <div class="stat"><span>Time</span><strong id="timer">00:00</strong></div>
-        <div class="stat"><span>Category</span><strong id="cat">—</strong></div>
-        <div class="grid" id="dots"></div>
-        <div class="actions"><button class="ghost" onclick="finishQuiz()">Finish now</button></div>
-      </aside>
-      <main class="question card">
-        <div class="qtop"><span class="tag" id="qnum">Question 1</span><span class="pill" id="difficulty">Mixed</span></div>
-        <h2 id="questionText"></h2>
-        <div class="options" id="options"></div>
-        <div class="explain" id="explain"></div>
-        <div class="nav">
-          <button class="ghost" onclick="prevQ()">Back</button>
-          <button class="primary" onclick="nextQ()" id="nextBtn">Next</button>
+        <div class="panel glass">
+          <h2>Useful enough for a real MVP, simple enough to ship today.</h2>
+          <p class="lead" style="font-size:21px;margin:0;color:var(--muted)">The sample is static, but the shape is production-ready: question bank, randomized sessions, timer, answer state, scoring, review, and category breakdown.</p>
+          <div class="feature-list">
+            <div class="feature"><div class="glyph">1</div><div><b>Random 30-question sessions</b><p>Every attempt samples without repeats from the available pool.</p></div></div>
+            <div class="feature"><div class="glyph">2</div><div><b>Clear practice flow</b><p>Progress, timer, question map, and instant selected-answer feedback.</p></div></div>
+            <div class="feature"><div class="glyph">3</div><div><b>Review and weak topics</b><p>Score, missed questions, explanations, and category breakdown after submission.</p></div></div>
+            <div class="feature"><div class="glyph">4</div><div><b>Easy upgrade path</b><p>Add login, admin CSV upload, saved attempts, leaderboards, certificates, or paid question packs.</p></div></div>
+          </div>
         </div>
-      </main>
+      </div>
     </section>
 
-    <section class="results card" id="results"></section>
-  </div>
-
-  <dialog id="poolModal">
-    <div class="modal">
-      <h2>Edit question pool</h2>
-      <p>Paste a larger JSON array here. The live product would have a proper admin uploader / CSV import.</p><br />
-      <textarea id="poolEditor"></textarea>
-      <div class="actions">
-        <button class="primary" onclick="savePool()">Save pool</button>
-        <button class="ghost" onclick="poolModal.close()">Close</button>
+    <section class="quiz-view" id="quizView">
+      <div class="quiz-shell">
+        <aside class="sidebar glass">
+          <b>Current quiz</b>
+          <div class="progress"><span id="progressBar"></span></div>
+          <div class="side-stat"><span>Answered</span><strong id="answered">0 / 30</strong></div>
+          <div class="side-stat"><span>Time</span><strong id="timer">00:00</strong></div>
+          <div class="side-stat"><span>Topic</span><strong id="topic">—</strong></div>
+          <div class="dots" id="dots"></div>
+          <div style="margin-top:18px"><button class="secondary" onclick="finishQuiz()">Finish</button></div>
+        </aside>
+        <section class="question-card glass">
+          <div class="q-meta"><span id="qNumber">Question 1</span><span id="difficulty">Mixed</span></div>
+          <h2 id="questionText"></h2>
+          <div class="options" id="options"></div>
+          <div class="explanation" id="explanation"></div>
+          <div class="question-actions"><button class="secondary" onclick="prevQ()">Back</button><button class="primary" id="nextButton" onclick="nextQ()">Next</button></div>
+        </section>
       </div>
-    </div>
-  </dialog>
+    </section>
+
+    <section class="results-view" id="resultsView"><div class="results-card glass" id="resultsCard"></div></section>
+  </main>
+
+  <dialog id="bankDialog"><div class="modal"><h2 style="margin-top:0">Question bank</h2><p style="color:var(--muted)">Paste a larger JSON array here. A real version would use an admin uploader or database.</p><textarea id="bankEditor"></textarea><div class="hero-actions" style="justify-content:flex-start"><button class="primary" onclick="savePool()">Save bank</button><button class="secondary" onclick="bankDialog.close()">Close</button></div></div></dialog>
 
   <script>
     let pool = [
-      {c:'Product', d:'Easy', q:'What is the main benefit of randomizing quiz questions?', o:['It makes grading impossible','It reduces memorization and repeat-pattern cheating','It removes the need for explanations','It guarantees every quiz is easier'], a:1, e:'Randomization creates fresher attempts and makes answer-pattern memorization less useful.'},
-      {c:'Product', d:'Medium', q:'Which feature best helps a learner improve after a quiz?', o:['A pretty landing page','A review screen with explanations for wrong answers','Hiding the score','Removing hard questions'], a:1, e:'Explanations turn the result into learning, not just measurement.'},
-      {c:'UX', d:'Easy', q:'Why show progress during a 30-question quiz?', o:['To increase anxiety','To help users pace themselves','To make the site slower','To replace navigation'], a:1, e:'Progress reduces uncertainty and helps people manage time.'},
-      {c:'UX', d:'Medium', q:'What is the best default behavior after a user selects an answer?', o:['Delete the question','Clearly mark the selected answer','Refresh the page','Jump to a random page with no context'], a:1, e:'Clear selection feedback prevents accidental uncertainty.'},
-      {c:'Learning', d:'Easy', q:'What is spaced repetition?', o:['Repeating everything immediately','Reviewing content at increasing intervals','Only studying once','Randomly deleting weak topics'], a:1, e:'Spaced repetition schedules review over time to strengthen memory.'},
-      {c:'Learning', d:'Medium', q:'Which metric is most useful for targeted practice?', o:['Favorite color','Weakest category by accuracy','Browser window size','Number of page animations'], a:1, e:'Category-level accuracy helps learners focus on weak areas.'},
-      {c:'Admin', d:'Easy', q:'What format is convenient for bulk importing questions?', o:['CSV or JSON','A screenshot only','A voice note only','A printed poster'], a:0, e:'CSV and JSON are structured formats that can be validated and imported.'},
-      {c:'Admin', d:'Medium', q:'Why should an admin panel validate questions before publishing?', o:['To slow everyone down','To catch missing answers, duplicates, and broken formatting','To hide the content forever','To prevent future edits'], a:1, e:'Validation protects quiz quality before users encounter bad questions.'},
-      {c:'Analytics', d:'Easy', q:'What does completion rate tell you?', o:['How many users finished the quiz','Whether the logo is blue','The exact reason each person quit','Nothing useful'], a:0, e:'Completion rate shows whether users are making it through the flow.'},
-      {c:'Analytics', d:'Medium', q:'What can high wrong-answer rates on one question indicate?', o:['The question may be confusing or the topic is hard','The timer is broken for sure','The site needs more colors','The answer must be hidden'], a:0, e:'Very high miss rates deserve review: either the topic is hard or the wording/options are flawed.'},
-      {c:'Security', d:'Easy', q:'Why avoid exposing admin tools publicly?', o:['Because users hate buttons','To prevent unauthorized question edits','To reduce font size','To make quizzes random'], a:1, e:'Admin access should require authentication and authorization.'},
-      {c:'Security', d:'Medium', q:'What should a backend do before accepting a submitted score?', o:['Trust all client data blindly','Validate session, answers, and timing server-side','Ignore the user','Change the questions after submission'], a:1, e:'Client-side data can be manipulated, so important scoring should be verified server-side.'},
-      {c:'Performance', d:'Easy', q:'Why is a static MVP fast to launch?', o:['It needs no server for the first version','It requires a huge database','It cannot run in browsers','It blocks deployment'], a:0, e:'A static app can be hosted quickly and cheaply on Vercel, Netlify, Cloudflare Pages, etc.'},
-      {c:'Performance', d:'Medium', q:'When does a quiz site usually need a database?', o:['For saving users, attempts, scores, and admin-managed content','For showing one static page','For changing text color','For loading CSS'], a:0, e:'Persistence — accounts, attempts, analytics, dynamic question pools — needs storage.'},
-      {c:'Monetization', d:'Easy', q:'Which is a common paid feature for quiz platforms?', o:['Premium question sets','Broken navigation','Removing all feedback','Hiding the start button'], a:0, e:'Premium packs, certifications, and detailed analytics are natural monetization points.'},
-      {c:'Monetization', d:'Medium', q:'What is a good free-to-paid upgrade path?', o:['Free sample quizzes, paid full question bank and analytics','Charge before showing anything','Delete free accounts weekly','Make the first screen unusable'], a:0, e:'Let users experience value, then charge for depth, tracking, or premium content.'},
-      {c:'Content', d:'Easy', q:'What makes a multiple-choice option set better?', o:['One clear correct answer and plausible distractors','All answers identical','No correct answer','Only jokes'], a:0, e:'Good distractors test knowledge without tricking users unfairly.'},
-      {c:'Content', d:'Medium', q:'Why tag questions by category?', o:['To support filtering, analytics, and weak-topic review','To make them harder to read','To increase file size only','To remove explanations'], a:0, e:'Tags power useful features later: category practice, reports, and recommendations.'},
-      {c:'Exam Mode', d:'Easy', q:'What should exam mode usually avoid?', o:['Showing explanations before submission','Keeping time','Showing progress','Recording answers'], a:0, e:'Exam mode should avoid immediate teaching feedback until after the attempt.'},
-      {c:'Exam Mode', d:'Medium', q:'What is a useful difference between practice mode and exam mode?', o:['Practice can show instant feedback; exam mode waits until the end','Practice has no questions','Exam mode cannot be scored','Practice mode should crash'], a:0, e:'The modes serve different jobs: learning vs assessment.'},
-      {c:'Accessibility', d:'Easy', q:'Which improves accessibility?', o:['Readable contrast and keyboard-friendly controls','Tiny grey text','Buttons with no labels','Only color-coded answers'], a:0, e:'Accessible interfaces use contrast, labels, keyboard support, and more than color alone.'},
-      {c:'Accessibility', d:'Medium', q:'Why should correct/wrong states not rely only on color?', o:['Some users may not distinguish colors easily','Colors are illegal','It makes code shorter','It prevents scoring'], a:0, e:'Use labels/icons/text too, especially for color-blind or low-vision users.'},
-      {c:'Retention', d:'Easy', q:'What feature encourages users to return?', o:['Streaks or scheduled practice reminders','A hidden homepage','Slow loading','No saved history'], a:0, e:'Light retention mechanics can remind users and make progress visible.'},
-      {c:'Retention', d:'Medium', q:'What is the risk of overusing gamification?', o:['It can distract from actual learning','It makes hosting impossible','It removes all questions','It guarantees cheating'], a:0, e:'Gamification should support the learning loop, not become noisy decoration.'},
-      {c:'Deployment', d:'Easy', q:'Which services are good for a quick static launch?', o:['Vercel, Netlify, or Cloudflare Pages','A spreadsheet only','A PDF viewer','A printer'], a:0, e:'These services can deploy static sites quickly from a folder or Git repo.'},
-      {c:'Deployment', d:'Medium', q:'What is needed for a custom domain?', o:['DNS setup pointing the domain to the host','A different computer mouse','A quiz explanation','A bigger logo'], a:0, e:'The domain registrar DNS needs records that point to the hosting provider.'},
-      {c:'Data', d:'Easy', q:'What should be stored for each quiz attempt?', o:['Question IDs, selected answers, score, timestamp','Only the user’s favorite emoji','Nothing ever','The CSS file'], a:0, e:'Attempt data makes review, analytics, and progress tracking possible.'},
-      {c:'Data', d:'Medium', q:'Why store question IDs instead of only question text in results?', o:['So results remain linked to the canonical question bank','To make scores random','To avoid categories','To prevent review'], a:0, e:'IDs keep data consistent even if wording changes later.'},
-      {c:'Growth', d:'Easy', q:'What makes a quiz result shareable?', o:['A clean summary with score and topic breakdown','A raw database dump','No title','A broken image'], a:0, e:'Shareable summaries can drive organic reach if privacy is handled well.'},
-      {c:'Growth', d:'Medium', q:'What should be considered before leaderboards?', o:['Fairness, cheating prevention, and privacy','Only button color','Whether questions have commas','Logo size'], a:0, e:'Leaderboards can motivate, but they need trust and privacy controls.'},
-      {c:'Mobile', d:'Easy', q:'Why optimize for mobile?', o:['Many users take quizzes on phones','Phones cannot open websites','It removes the need for content','It blocks desktop users'], a:0, e:'Mobile-friendly layouts reduce friction for casual practice.'},
-      {c:'Mobile', d:'Medium', q:'What makes quiz buttons mobile-friendly?', o:['Large tap targets and clear spacing','Tiny links close together','Hover-only interactions','Hidden answer text'], a:0, e:'Touch interfaces need forgiving tap areas and readable spacing.'},
-      {c:'Quality', d:'Easy', q:'What is a useful first QA check?', o:['Complete a full quiz and verify scoring','Change the background randomly','Delete the pool','Ignore wrong answers'], a:0, e:'End-to-end testing catches the flow errors users would hit.'},
-      {c:'Quality', d:'Medium', q:'What should happen if the pool has fewer than 30 questions?', o:['Warn the admin or use all available questions with clear messaging','Crash silently','Duplicate every question','Pretend there are 30'], a:0, e:'The product should handle small pools honestly and clearly.'},
-      {c:'Roadmap', d:'Easy', q:'What is a sensible MVP scope?', o:['Quiz flow, scoring, review, admin question import','Blockchain certificate marketplace first','Animated mascot only','A full social network'], a:0, e:'Start with the core learning loop before adding heavy extras.'},
-      {c:'Roadmap', d:'Medium', q:'Which feature should come after basic scoring?', o:['Weak-topic recommendations','A random soundboard','Changing every font daily','Removing results'], a:0, e:'Recommendations are a natural next step once the system knows what users missed.'}
-    ];
+      ['Product','Easy','What is the main benefit of randomizing quiz questions?',['It makes grading impossible','It reduces memorization and repeated answer-pattern cheating','It removes explanations','It guarantees every quiz is easier'],1,'Randomization creates fresher attempts and makes answer-pattern memorization less useful.'],
+      ['Product','Medium','Which feature best helps a learner improve after a quiz?',['A pretty landing page','A review screen with explanations for wrong answers','Hiding the score','Removing hard questions'],1,'Explanations turn the result into learning, not just measurement.'],
+      ['UX','Easy','Why show progress during a 30-question quiz?',['To increase anxiety','To help users pace themselves','To make the site slower','To replace navigation'],1,'Progress reduces uncertainty and helps people manage time.'],
+      ['UX','Medium','What is the best default behavior after a user selects an answer?',['Delete the question','Clearly mark the selected answer','Refresh the page','Jump randomly with no context'],1,'Clear selection feedback prevents accidental uncertainty.'],
+      ['Learning','Easy','What is spaced repetition?',['Repeating everything immediately','Reviewing content at increasing intervals','Only studying once','Randomly deleting weak topics'],1,'Spaced repetition schedules review over time to strengthen memory.'],
+      ['Learning','Medium','Which metric is most useful for targeted practice?',['Favorite color','Weakest category by accuracy','Browser window size','Number of animations'],1,'Category-level accuracy helps learners focus on weak areas.'],
+      ['Admin','Easy','What format is convenient for bulk importing questions?',['CSV or JSON','A screenshot only','A voice note only','A printed poster'],0,'CSV and JSON are structured formats that can be validated and imported.'],
+      ['Admin','Medium','Why should an admin panel validate questions before publishing?',['To slow everyone down','To catch missing answers, duplicates, and broken formatting','To hide content forever','To prevent future edits'],1,'Validation protects quiz quality before users encounter bad questions.'],
+      ['Analytics','Easy','What does completion rate tell you?',['How many users finished the quiz','Whether the logo is blue','The exact reason each person quit','Nothing useful'],0,'Completion rate shows whether users are making it through the flow.'],
+      ['Analytics','Medium','What can high wrong-answer rates on one question indicate?',['The question may be confusing or the topic is hard','The timer is broken for sure','The site needs more colors','The answer must be hidden'],0,'Very high miss rates deserve review: either the topic is hard or the wording/options are flawed.'],
+      ['Security','Easy','Why avoid exposing admin tools publicly?',['Because users hate buttons','To prevent unauthorized question edits','To reduce font size','To make quizzes random'],1,'Admin access should require authentication and authorization.'],
+      ['Security','Medium','What should a backend do before accepting a submitted score?',['Trust all client data blindly','Validate session, answers, and timing server-side','Ignore the user','Change questions after submission'],1,'Client-side data can be manipulated, so important scoring should be verified server-side.'],
+      ['Performance','Easy','Why is a static MVP fast to launch?',['It needs no server for the first version','It requires a huge database','It cannot run in browsers','It blocks deployment'],0,'A static app can be hosted quickly and cheaply on Vercel, Netlify, Cloudflare Pages, or GitHub Pages.'],
+      ['Performance','Medium','When does a quiz site usually need a database?',['For saving users, attempts, scores, and admin-managed content','For showing one static page','For changing text color','For loading CSS'],0,'Persistence — accounts, attempts, analytics, dynamic question pools — needs storage.'],
+      ['Monetization','Easy','Which is a common paid feature for quiz platforms?',['Premium question sets','Broken navigation','Removing all feedback','Hiding the start button'],0,'Premium packs, certifications, and detailed analytics are natural monetization points.'],
+      ['Monetization','Medium','What is a good free-to-paid upgrade path?',['Free sample quizzes, paid full question bank and analytics','Charge before showing anything','Delete free accounts weekly','Make the first screen unusable'],0,'Let users experience value, then charge for depth, tracking, or premium content.'],
+      ['Content','Easy','What makes a multiple-choice option set better?',['One clear correct answer and plausible distractors','All answers identical','No correct answer','Only jokes'],0,'Good distractors test knowledge without tricking users unfairly.'],
+      ['Content','Medium','Why tag questions by category?',['To support filtering, analytics, and weak-topic review','To make them harder to read','To increase file size only','To remove explanations'],0,'Tags power useful features later: category practice, reports, and recommendations.'],
+      ['Exam Mode','Easy','What should exam mode usually avoid?',['Showing explanations before submission','Keeping time','Showing progress','Recording answers'],0,'Exam mode should avoid immediate teaching feedback until after the attempt.'],
+      ['Exam Mode','Medium','What is a useful difference between practice mode and exam mode?',['Practice can show instant feedback; exam mode waits until the end','Practice has no questions','Exam mode cannot be scored','Practice mode should crash'],0,'The modes serve different jobs: learning versus assessment.'],
+      ['Accessibility','Easy','Which improves accessibility?',['Readable contrast and keyboard-friendly controls','Tiny grey text','Buttons with no labels','Only color-coded answers'],0,'Accessible interfaces use contrast, labels, keyboard support, and more than color alone.'],
+      ['Accessibility','Medium','Why should correct/wrong states not rely only on color?',['Some users may not distinguish colors easily','Colors are illegal','It makes code shorter','It prevents scoring'],0,'Use labels/icons/text too, especially for color-blind or low-vision users.'],
+      ['Retention','Easy','What feature encourages users to return?',['Streaks or scheduled practice reminders','A hidden homepage','Slow loading','No saved history'],0,'Light retention mechanics can remind users and make progress visible.'],
+      ['Retention','Medium','What is the risk of overusing gamification?',['It can distract from actual learning','It makes hosting impossible','It removes all questions','It guarantees cheating'],0,'Gamification should support the learning loop, not become noisy decoration.'],
+      ['Deployment','Easy','Which services are good for a quick static launch?',['Vercel, Netlify, Cloudflare Pages, or GitHub Pages','A spreadsheet only','A PDF viewer','A printer'],0,'These services can deploy static sites quickly from a folder or Git repo.'],
+      ['Deployment','Medium','What is needed for a custom domain?',['DNS setup pointing the domain to the host','A different computer mouse','A quiz explanation','A bigger logo'],0,'The domain registrar DNS needs records that point to the hosting provider.'],
+      ['Data','Easy','What should be stored for each quiz attempt?',['Question IDs, selected answers, score, timestamp','Only the user’s favorite emoji','Nothing ever','The CSS file'],0,'Attempt data makes review, analytics, and progress tracking possible.'],
+      ['Data','Medium','Why store question IDs instead of only question text in results?',['So results remain linked to the canonical question bank','To make scores random','To avoid categories','To prevent review'],0,'IDs keep data consistent even if wording changes later.'],
+      ['Growth','Easy','What makes a quiz result shareable?',['A clean summary with score and topic breakdown','A raw database dump','No title','A broken image'],0,'Shareable summaries can drive organic reach if privacy is handled well.'],
+      ['Growth','Medium','What should be considered before leaderboards?',['Fairness, cheating prevention, and privacy','Only button color','Whether questions have commas','Logo size'],0,'Leaderboards can motivate, but they need trust and privacy controls.'],
+      ['Mobile','Easy','Why optimize for mobile?',['Many users take quizzes on phones','Phones cannot open websites','It removes content','It blocks desktop users'],0,'Mobile-friendly layouts reduce friction for casual practice.'],
+      ['Mobile','Medium','What makes quiz buttons mobile-friendly?',['Large tap targets and clear spacing','Tiny links close together','Hover-only interactions','Hidden answer text'],0,'Touch interfaces need forgiving tap areas and readable spacing.'],
+      ['Quality','Easy','What is a useful first QA check?',['Complete a full quiz and verify scoring','Change the background randomly','Delete the pool','Ignore wrong answers'],0,'End-to-end testing catches the flow errors users would hit.'],
+      ['Quality','Medium','What should happen if the pool has fewer than 30 questions?',['Warn the admin or use all available questions with clear messaging','Crash silently','Duplicate every question','Pretend there are 30'],0,'The product should handle small pools honestly and clearly.'],
+      ['Roadmap','Easy','What is a sensible MVP scope?',['Quiz flow, scoring, review, admin question import','Blockchain certificate marketplace first','Animated mascot only','A full social network'],0,'Start with the core learning loop before adding heavy extras.'],
+      ['Roadmap','Medium','Which feature should come after basic scoring?',['Weak-topic recommendations','A random soundboard','Changing every font daily','Removing results'],0,'Recommendations are a natural next step once the system knows what users missed.'],
+      ['Design','Easy','What does restrained visual design help with?',['Focus and readability','Confusing users','Making questions disappear','Preventing scoring'],0,'A calm interface lets the quiz content carry the experience.'],
+      ['Design','Medium','Why use generous spacing in quiz UI?',['It lowers cognitive load and improves tap accuracy','It hides the options','It makes every answer correct','It removes hierarchy'],0,'Spacing makes choices easier to scan and safer to tap, especially on mobile.'],
+      ['Ops','Easy','What should happen before publishing a question bank?',['Preview and validation','Immediate blind release','Delete explanations','Disable review'],0,'Preview and validation catch errors before users do.'],
+      ['Ops','Medium','What is a good audit trail item?',['Who edited a question and when','The admin’s shoe size','The page background color only','Nothing'],0,'Audit trails are useful when teams manage content together.']
+    ].map((x,i)=>({id:i+1,c:x[0],d:x[1],q:x[2],o:x[3],a:x[4],e:x[5]}));
 
-    let quiz = [], answers = [], current = 0, startedAt = 0, timerId;
-    const $ = id => document.getElementById(id);
-
-    function shuffle(arr) { return [...arr].sort(() => Math.random() - 0.5); }
-    function startQuiz() {
-      const count = Math.min(30, pool.length);
-      quiz = shuffle(pool).slice(0, count);
-      answers = Array(count).fill(null);
-      current = 0; startedAt = Date.now();
-      $('home').style.display = 'none'; $('results').style.display = 'none'; $('quiz').style.display = 'grid';
-      renderDots(); renderQuestion(); tick(); clearInterval(timerId); timerId = setInterval(tick, 1000);
+    let quiz=[], answers=[], current=0, startedAt=0, timerId=null;
+    const el = id => document.getElementById(id);
+    const shuffle = arr => [...arr].sort(()=>Math.random()-.5);
+    function startQuiz(){
+      quiz = shuffle(pool).slice(0, Math.min(30,pool.length)); answers = Array(quiz.length).fill(null); current=0; startedAt=Date.now();
+      el('home').style.display='none'; el('marketing').style.display='none'; el('resultsView').style.display='none'; el('quizView').style.display='block';
+      clearInterval(timerId); timerId=setInterval(tick,1000); tick(); render(); window.scrollTo(0,0);
     }
-    function tick() {
-      const s = Math.floor((Date.now() - startedAt) / 1000);
-      $('timer').textContent = String(Math.floor(s/60)).padStart(2,'0') + ':' + String(s%60).padStart(2,'0');
+    function tick(){ const s=Math.floor((Date.now()-startedAt)/1000); el('timer').textContent=String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0'); }
+    function render(){
+      const q=quiz[current], answered=answers.filter(x=>x!==null).length;
+      el('qNumber').textContent=`Question ${current+1} of ${quiz.length}`; el('difficulty').textContent=q.d; el('topic').textContent=q.c;
+      el('questionText').textContent=q.q; el('answered').textContent=`${answered} / ${quiz.length}`; el('progressBar').style.width=`${answered/quiz.length*100}%`;
+      el('nextButton').textContent=current===quiz.length-1?'Finish':'Next';
+      el('options').innerHTML=q.o.map((op,i)=>`<button class="option ${answers[current]===i?'selected':''}" onclick="selectAnswer(${i})">${String.fromCharCode(65+i)}. ${op}</button>`).join('');
+      el('explanation').style.display=answers[current]===null?'none':'block'; el('explanation').textContent=q.e;
+      el('dots').innerHTML=quiz.map((_,i)=>`<button class="dot ${answers[i]!==null?'done':''} ${i===current?'current':''}" onclick="goQ(${i})">${i+1}</button>`).join('');
     }
-    function renderDots() {
-      $('dots').innerHTML = quiz.map((_, i) => `<button class="dot ${answers[i]!==null?'done':''}" onclick="goQ(${i})">${i+1}</button>`).join('');
+    function selectAnswer(i){ answers[current]=i; render(); }
+    function nextQ(){ current===quiz.length-1 ? finishQuiz() : (current++, render()); }
+    function prevQ(){ if(current>0){ current--; render(); } }
+    function goQ(i){ current=i; render(); }
+    function finishQuiz(){
+      clearInterval(timerId); const correct=quiz.reduce((n,q,i)=>n+(answers[i]===q.a),0); const pct=Math.round(correct/quiz.length*100);
+      const cats={}; quiz.forEach((q,i)=>{ cats[q.c]??={r:0,t:0}; cats[q.c].t++; if(answers[i]===q.a) cats[q.c].r++; });
+      el('quizView').style.display='none'; el('resultsView').style.display='block';
+      el('resultsCard').innerHTML=`<div class="eyebrow">Result</div><div class="score">${pct}%</div><h2 style="font-size:clamp(34px,5vw,64px);line-height:1;letter-spacing:-.06em;margin:0 0 12px">${correct} correct out of ${quiz.length}.</h2><p class="lead" style="font-size:21px;margin:0">${pct>=85?'Excellent. You can move to harder sets.':pct>=65?'Solid. Review the misses and retake once.':'Useful diagnostic. Start with the weak topics below.'}</p><div class="hero-actions" style="justify-content:flex-start"><button class="primary" onclick="startQuiz()">New random set</button><button class="secondary" onclick="location.reload()">Home</button></div><h2 style="margin-top:34px">Topic breakdown</h2><div class="review-grid">${Object.entries(cats).map(([c,v])=>`<div class="review-item"><b>${c}</b><p>${v.r}/${v.t} correct · ${Math.round(v.r/v.t*100)}%</p></div>`).join('')}</div><h2 style="margin-top:34px">Missed questions</h2><div class="review-grid">${quiz.map((q,i)=>answers[i]===q.a?'':`<div class="review-item"><b>${q.q}</b><p>Your answer: ${answers[i]===null?'Not answered':q.o[answers[i]]}</p><p>Correct: ${q.o[q.a]}</p><p>${q.e}</p></div>`).join('') || '<div class="review-item"><b>No misses.</b><p>Clean run.</p></div>'}</div>`;
+      window.scrollTo(0,0);
     }
-    function renderQuestion() {
-      const q = quiz[current];
-      $('qnum').textContent = `Question ${current + 1} of ${quiz.length}`;
-      $('difficulty').textContent = q.d;
-      $('cat').textContent = q.c;
-      $('questionText').textContent = q.q;
-      $('answered').textContent = `${answers.filter(a => a !== null).length} / ${quiz.length}`;
-      $('progress').style.width = `${(answers.filter(a => a !== null).length / quiz.length) * 100}%`;
-      $('nextBtn').textContent = current === quiz.length - 1 ? 'Finish' : 'Next';
-      $('options').innerHTML = q.o.map((op, i) => `<button class="option ${answers[current]===i?'selected':''}" onclick="selectAnswer(${i})">${String.fromCharCode(65+i)}. ${op}</button>`).join('');
-      const explain = $('explain'); explain.style.display = answers[current] === null ? 'none' : 'block'; explain.textContent = q.e;
-      renderDots();
-    }
-    function selectAnswer(i) { answers[current] = i; renderQuestion(); }
-    function nextQ() { current === quiz.length - 1 ? finishQuiz() : (current++, renderQuestion()); }
-    function prevQ() { if (current > 0) { current--; renderQuestion(); } }
-    function goQ(i) { current = i; renderQuestion(); }
-    function finishQuiz() {
-      clearInterval(timerId);
-      const correct = quiz.reduce((n, q, i) => n + (answers[i] === q.a ? 1 : 0), 0);
-      const pct = Math.round((correct / quiz.length) * 100);
-      const byCat = {};
-      quiz.forEach((q, i) => { byCat[q.c] ||= {right:0,total:0}; byCat[q.c].total++; if (answers[i] === q.a) byCat[q.c].right++; });
-      $('quiz').style.display = 'none'; $('results').style.display = 'block';
-      $('results').innerHTML = `
-        <span class="pill">Results</span><div class="score">${pct}%</div>
-        <h2>${correct} / ${quiz.length} correct</h2>
-        <p>${pct >= 80 ? 'Strong run. Review the misses and move to harder questions.' : pct >= 60 ? 'Decent base. Your weak categories below are the next best practice set.' : 'Good diagnostic. Focus on explanations first, then retake with a fresh random set.'}</p>
-        <div class="actions"><button class="primary" onclick="startQuiz()">Retake random quiz</button><button class="ghost" onclick="location.reload()">Back home</button></div>
-        <h2 style="margin-top:28px">Topic breakdown</h2>
-        <div class="review">${Object.entries(byCat).map(([c,v]) => `<div class="review-item"><b>${c}</b><p>${v.right}/${v.total} correct · ${Math.round(v.right/v.total*100)}%</p></div>`).join('')}</div>
-        <h2 style="margin-top:28px">Review missed questions</h2>
-        <div class="review">${quiz.map((q,i) => answers[i] === q.a ? '' : `<div class="review-item"><b>Q${i+1}. ${q.q}</b><p>Your answer: ${answers[i]===null?'Not answered':q.o[answers[i]]}</p><p>Correct: ${q.o[q.a]}</p><p>${q.e}</p></div>`).join('') || '<p>No misses. Clean work.</p>'}</div>`;
-      window.scrollTo({top: 0, behavior: 'smooth'});
-    }
-    function openPool() { $('poolEditor').value = JSON.stringify(pool, null, 2); poolModal.showModal(); }
-    function savePool() {
-      try { const next = JSON.parse($('poolEditor').value); if (!Array.isArray(next)) throw Error('Pool must be an array'); pool = next; poolModal.close(); alert(`Saved ${pool.length} questions.`); }
-      catch (e) { alert('Invalid JSON: ' + e.message); }
-    }
+    function openPool(){ el('bankEditor').value=JSON.stringify(pool,null,2); bankDialog.showModal(); }
+    function savePool(){ try{ const next=JSON.parse(el('bankEditor').value); if(!Array.isArray(next)) throw Error('Must be an array'); pool=next; bankDialog.close(); alert(`Saved ${pool.length} questions.`); }catch(e){ alert('Invalid JSON: '+e.message); } }
   </script>
 </body>
 </html>
