@@ -89,22 +89,26 @@
     .feature b { display: block; margin-bottom: 4px; letter-spacing: -.02em; }
     .feature p { margin: 0; color: var(--muted); line-height: 1.38; }
     .quiz-view, .results-view { display: none; padding: 28px 0 70px; }
-    .quiz-shell { display: grid; grid-template-columns: 300px 1fr; gap: 22px; align-items: start; }
-    .sidebar, .question-card, .results-card { padding: 24px; }
-    .progress { height: 8px; border-radius: 999px; background: rgba(0,0,0,.07); overflow: hidden; margin: 16px 0 20px; }
+    .quiz-shell { display: grid; grid-template-columns: minmax(220px, 280px) 1fr; gap: 18px; align-items: start; }
+    .sidebar, .question-card, .results-card { padding: 22px; }
+    .sidebar { position: sticky; top: 72px; }
+    .progress { height: 9px; border-radius: 999px; background: rgba(0,0,0,.07); overflow: hidden; margin: 12px 0 16px; }
     .progress span { height: 100%; display: block; width: 0%; background: var(--blue); transition: width .25s ease; }
-    .side-stat { padding: 14px 0; border-top: 1px solid rgba(0,0,0,.07); display: flex; justify-content: space-between; color: var(--muted); }
+    .side-stat { padding: 11px 0; border-top: 1px solid rgba(0,0,0,.07); display: flex; justify-content: space-between; color: var(--muted); font-size: 14px; }
     .side-stat strong { color: var(--ink); }
-    .dots { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-top: 16px; }
+    .dots { display: grid; grid-template-columns: repeat(5, 1fr); gap: 7px; margin-top: 14px; }
     .dot { aspect-ratio: 1; padding: 0; border-radius: 14px; font-size: 13px; background: rgba(0,0,0,.055); color: var(--muted); }
     .dot.done { background: var(--blue); color: #fff; }
     .dot.current { outline: 2px solid rgba(0,122,255,.28); }
     .q-meta { display: flex; justify-content: space-between; gap: 12px; color: var(--muted); margin-bottom: 18px; }
-    .question-card h2 { font-size: clamp(32px, 4.7vw, 62px); line-height: 1.02; letter-spacing: -.065em; margin: 0 0 22px; }
+    .question-card h2 { font-size: clamp(28px, 4.2vw, 54px); line-height: 1.04; letter-spacing: -.06em; margin: 0 0 20px; max-width: 980px; }
     .options { display: grid; gap: 10px; }
-    .option { text-align: left; border-radius: 19px; padding: 17px 18px; background: rgba(255,255,255,.78); border: 1px solid rgba(0,0,0,.07); color: var(--ink); }
+    .option { text-align: left; border-radius: 19px; padding: 17px 18px; background: rgba(255,255,255,.86); border: 1px solid rgba(0,0,0,.07); color: var(--ink); min-height: 58px; }
     .option.selected { background: rgba(0,122,255,.10); border-color: rgba(0,122,255,.36); color: #0057c2; }
+    .option.correct { background: rgba(52,199,89,.12); border-color: rgba(52,199,89,.38); color: #167a34; }
+    .option.wrong { background: rgba(255,59,48,.10); border-color: rgba(255,59,48,.35); color: #b42318; }
     .explanation { display: none; margin-top: 16px; padding: 16px; border-radius: 20px; background: rgba(52,199,89,.10); color: #1f7a3a; border: 1px solid rgba(52,199,89,.18); line-height: 1.45; }
+    .explanation.wrong { background: rgba(255,59,48,.08); color: #a71e16; border-color: rgba(255,59,48,.18); }
     .question-actions { display: flex; justify-content: space-between; gap: 12px; margin-top: 20px; }
     .score { font-size: clamp(72px, 13vw, 150px); line-height: .86; letter-spacing: -.09em; margin: 12px 0; }
     .review-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 22px; }
@@ -114,7 +118,29 @@
     dialog::backdrop { background: rgba(0,0,0,.28); backdrop-filter: blur(8px); }
     .modal { padding: 26px; }
     textarea { width: 100%; min-height: 260px; border: 1px solid rgba(0,0,0,.12); border-radius: 20px; padding: 16px; font: 13px ui-monospace, SFMono-Regular, Menlo, monospace; background: white; color: var(--ink); resize: vertical; }
-    @media (max-width: 920px) { .preview-grid, .quiz-shell { grid-template-columns: 1fr; } .phone-wrap { min-height: auto; } .review-grid { grid-template-columns: 1fr; } h1 { letter-spacing: -.06em; } }
+    @media (max-width: 920px) {
+      .preview-grid { grid-template-columns: 1fr; }
+      .quiz-shell { grid-template-columns: 1fr; gap: 12px; }
+      .sidebar { position: sticky; top: 54px; z-index: 20; border-radius: 0 0 24px 24px; margin-left: -18px; margin-right: -18px; padding: 14px 18px; }
+      .sidebar .dots { display: none; }
+      .sidebar > b { display: none; }
+      .side-stat { display: inline-flex; gap: 6px; border: 0; padding: 0 14px 0 0; }
+      .progress { margin: 8px 0 10px; }
+      .question-card { padding: 20px; border-radius: 26px; }
+      .question-actions { position: sticky; bottom: 10px; padding-top: 6px; }
+      .option { min-height: 62px; font-size: 16px; border-radius: 18px; }
+      .phone-wrap { min-height: auto; } .review-grid { grid-template-columns: 1fr; } h1 { letter-spacing: -.06em; }
+    }
+    @media (max-width: 520px) {
+      .wrap { width: min(100% - 24px, 1180px); }
+      .hero { padding: 44px 0 20px; }
+      h1 { font-size: 46px; }
+      .lead { font-size: 18px; }
+      .quiz-view { padding-top: 0; }
+      .q-meta { font-size: 14px; margin-bottom: 12px; }
+      .question-card h2 { font-size: 30px; }
+      .hero-actions button, .question-actions button { flex: 1; }
+    }
   </style>
 </head>
 <body>
@@ -174,7 +200,8 @@
     <section class="quiz-view" id="quizView">
       <div class="quiz-shell">
         <aside class="sidebar glass">
-          <b>Current quiz</b>
+          <b>Practice mode</b>
+          <p style="margin:4px 0 0;color:var(--muted);font-size:13px">Answers show immediately.</p>
           <div class="progress"><span id="progressBar"></span></div>
           <div class="side-stat"><span>Answered</span><strong id="answered">0 / 30</strong></div>
           <div class="side-stat"><span>Time</span><strong id="timer">00:00</strong></div>
@@ -257,8 +284,20 @@
       el('qNumber').textContent=`Question ${current+1} of ${quiz.length}`; el('difficulty').textContent=q.d; el('topic').textContent=q.c;
       el('questionText').textContent=q.q; el('answered').textContent=`${answered} / ${quiz.length}`; el('progressBar').style.width=`${answered/quiz.length*100}%`;
       el('nextButton').textContent=current===quiz.length-1?'Finish':'Next';
-      el('options').innerHTML=q.o.map((op,i)=>`<button class="option ${answers[current]===i?'selected':''}" onclick="selectAnswer(${i})">${String.fromCharCode(65+i)}. ${op}</button>`).join('');
-      el('explanation').style.display=answers[current]===null?'none':'block'; el('explanation').textContent=q.e;
+      el('options').innerHTML=q.o.map((op,i)=>{
+        const chosen = answers[current];
+        let cls = 'option';
+        if (chosen !== null) {
+          if (i === q.a) cls += ' correct';
+          if (i === chosen && i !== q.a) cls += ' wrong';
+          if (i === chosen) cls += ' selected';
+        }
+        return `<button class="${cls}" onclick="selectAnswer(${i})">${String.fromCharCode(65+i)}. ${op}</button>`;
+      }).join('');
+      const chosen = answers[current];
+      el('explanation').style.display=chosen===null?'none':'block';
+      el('explanation').className = 'explanation' + (chosen!==null && chosen!==q.a ? ' wrong' : '');
+      el('explanation').innerHTML = chosen===null ? '' : (chosen===q.a ? `Correct. ${q.e}` : `Not quite. Correct answer: <b>${q.o[q.a]}</b><br>${q.e}`);
       el('dots').innerHTML=quiz.map((_,i)=>`<button class="dot ${answers[i]!==null?'done':''} ${i===current?'current':''}" onclick="goQ(${i})">${i+1}</button>`).join('');
     }
     function selectAnswer(i){ answers[current]=i; render(); }
