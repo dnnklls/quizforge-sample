@@ -5,43 +5,43 @@ window.QUESTION_POOL = [
     "difficulty": "Medium",
     "question": "Port is served in?",
     "options": [
-      "United States",
-      "Water Glass",
-      "Wine Glass",
-      "Vintage"
+      "Champagne flute",
+      "Brandy goblet",
+      "Wine glass",
+      "Water glass"
     ],
     "answer": 2,
-    "explanation": "Correct answer: Wine Glass.",
+    "explanation": "Correct answer: Wine glass.",
     "source": "Uploaded JCL CBT PDFs"
   },
   {
     "id": "jcl-002",
     "category": "JCL CBT",
     "difficulty": "Medium",
-    "question": "Garnishes that look limpy?",
+    "question": "What should crew do if garnishes look limp?",
     "options": [
-      "24 Hours before departure",
-      "Straits Times and Business Times",
-      "Custard made with cream",
-      "Soak in ice water"
+      "Pat them dry with a paper towel",
+      "Leave them at room temperature",
+      "Replace them only after boarding",
+      "Soak them in ice water"
     ],
     "answer": 3,
-    "explanation": "Correct answer: Soak in ice water.",
+    "explanation": "Correct answer: Soak them in ice water.",
     "source": "Uploaded JCL CBT PDFs"
   },
   {
     "id": "jcl-003",
     "category": "Beverages",
     "difficulty": "Medium",
-    "question": "Ice Coffee?",
+    "question": "Iced coffee is served in which glass?",
     "options": [
-      "Wine Glass",
-      "Water Glass",
-      "United States",
-      "Vintage"
+      "Wine glass",
+      "Water glass",
+      "Champagne flute",
+      "Brandy goblet"
     ],
     "answer": 1,
-    "explanation": "Correct answer: Water Glass.",
+    "explanation": "Correct answer: Water glass.",
     "source": "Uploaded JCL CBT PDFs"
   },
   {
@@ -61,15 +61,15 @@ window.QUESTION_POOL = [
     "id": "jcl-005",
     "category": "JCL CBT",
     "difficulty": "Medium",
-    "question": "BTC Request made at least?",
+    "question": "A Book the Cook (BTC) request must be made at least how long before departure?",
     "options": [
-      "Custard made with cream",
-      "Straits Times and Business Times",
-      "24 Hours before departure",
-      "Soak in ice water"
+      "12 hours before departure",
+      "18 hours before departure",
+      "24 hours before departure",
+      "48 hours before departure"
     ],
     "answer": 2,
-    "explanation": "Correct answer: 24 Hours before departure.",
+    "explanation": "Correct answer: 24 hours before departure.",
     "source": "Uploaded JCL CBT PDFs"
   },
   {
@@ -78,25 +78,25 @@ window.QUESTION_POOL = [
     "difficulty": "Hard",
     "question": "Guidelines to heat up satay?",
     "options": [
-      "Dry heat for 4-6 minutes",
-      "Dry Heat, 15 minutes with foil partially open at the stick end",
-      "Top right of the tray",
-      "Serving fruit and cheese; Serving satays; Base lined with non-slip mat for large bowl"
+      "Dry heat for 4–6 minutes",
+      "Dry heat for 15 minutes with foil partially open at the stick end",
+      "Steam heat for 10 minutes with foil closed",
+      "Microwave on high for 3 minutes"
     ],
     "answer": 1,
-    "explanation": "Correct answer: Dry Heat, 15 minutes with foil partially open at the stick end.",
+    "explanation": "Correct answer: Dry heat for 15 minutes with foil partially open at the stick end.",
     "source": "Uploaded JCL CBT PDFs"
   },
   {
     "id": "jcl-007",
     "category": "Meal Service",
     "difficulty": "Medium",
-    "question": "Miso Soup for Hanakoreiki is placed on the?",
+    "question": "Miso soup for Hanakoireki is placed on which part of the tray?",
     "options": [
-      "Dry heat for 4-6 minutes",
-      "30gm individual packs",
+      "Bottom left of the tray",
+      "Top left of the tray",
       "Top right of the tray",
-      "Dry Heat, 15 minutes with foil partially open at the stick end"
+      "Bottom right of the tray"
     ],
     "answer": 2,
     "explanation": "Correct answer: Top right of the tray.",
@@ -108,9 +108,9 @@ window.QUESTION_POOL = [
     "difficulty": "Medium",
     "question": "Grapes grown and harvested within the same year to produce wine known as?",
     "options": [
-      "Wine Glass",
-      "United States",
-      "Water Glass",
+      "Fortified",
+      "Full-bodied",
+      "Aromatized",
       "Vintage"
     ],
     "answer": 3,
@@ -134,12 +134,12 @@ window.QUESTION_POOL = [
     "id": "jcl-010",
     "category": "Beverages",
     "difficulty": "Medium",
-    "question": "ICP Chef Alfred Portale is from?",
+    "question": "ICP Chef Alfred Portale is from which country?",
     "options": [
-      "Vintage",
+      "France",
       "United States",
-      "Water Glass",
-      "Wine Glass"
+      "Italy",
+      "Australia"
     ],
     "answer": 1,
     "explanation": "Correct answer: United States.",
@@ -151,10 +151,10 @@ window.QUESTION_POOL = [
     "difficulty": "Medium",
     "question": "Danish pastries should be?",
     "options": [
-      "Broiling and searing",
-      "Wrapping food in paper and baking in the oven",
+      "Heated in oven for 2 minutes",
+      "Heated in oven for 3 minutes",
       "Heated in oven for 4 minutes",
-      "Water Glass"
+      "Served without heating"
     ],
     "answer": 2,
     "explanation": "Correct answer: Heated in oven for 4 minutes.",
@@ -164,11 +164,11 @@ window.QUESTION_POOL = [
     "id": "jcl-012",
     "category": "Cabin Procedures",
     "difficulty": "Medium",
-    "question": "How many preset seat positions available for the JCL Weber seat?",
+    "question": "How many preset seat positions are available for the JCL Weber seat?",
     "options": [
-      "On request basis",
-      "Wine Glass",
-      "Water Glass",
+      "2",
+      "3",
+      "5",
       "4"
     ],
     "answer": 3,
@@ -192,15 +192,15 @@ window.QUESTION_POOL = [
     "id": "jcl-014",
     "category": "Meal Service",
     "difficulty": "Medium",
-    "question": "Proper method heating for garlic bread is?",
+    "question": "What is the proper heating method for garlic bread?",
     "options": [
-      "30gm individual packs",
-      "Dry heat for 4-6 minutes",
-      "Dry Heat, 15 minutes with foil partially open at the stick end",
-      "Top right of the tray"
+      "Dry heat for 2–3 minutes",
+      "Dry heat for 4–6 minutes",
+      "Dry heat for 10 minutes",
+      "Steam heat for 4–6 minutes"
     ],
     "answer": 1,
-    "explanation": "Correct answer: Dry heat for 4-6 minutes.",
+    "explanation": "Correct answer: Dry heat for 4–6 minutes.",
     "source": "Uploaded JCL CBT PDFs"
   },
   {
@@ -246,15 +246,15 @@ window.QUESTION_POOL = [
     "id": "jcl-018",
     "category": "Meal Service",
     "difficulty": "Hard",
-    "question": "Use of medium round plate?",
+    "question": "What is the medium round plate used for?",
     "options": [
-      "Dry heat for 4-6 minutes",
-      "Dry Heat, 15 minutes with foil partially open at the stick end",
-      "Top right of the tray",
-      "Serving fruit and cheese; Serving satays; Base lined with non-slip mat for large bowl"
+      "Serving soup only",
+      "Serving main course trays only",
+      "Holding beverage glassware only",
+      "Serving fruit and cheese; serving satays; base lined with non-slip mat for large bowl"
     ],
     "answer": 3,
-    "explanation": "Correct answer: Serving fruit and cheese; Serving satays; Base lined with non-slip mat for large bowl.",
+    "explanation": "Correct answer: Serving fruit and cheese; serving satays; base lined with non-slip mat for large bowl.",
     "source": "Uploaded JCL CBT PDFs"
   },
   {
@@ -276,22 +276,22 @@ window.QUESTION_POOL = [
     "id": "jcl-020",
     "category": "Beverages",
     "difficulty": "Medium",
-    "question": "Which of the following wine have a higher level of tannin?",
+    "question": "Which of the following wines has a higher level of tannin?",
     "options": [
-      "Wine Glass",
-      "Vintage",
-      "Red Wines",
-      "Water Glass"
+      "White wines",
+      "Rosé wines",
+      "Red wines",
+      "Sparkling wines"
     ],
     "answer": 2,
-    "explanation": "Correct answer: Red Wines.",
+    "explanation": "Correct answer: Red wines.",
     "source": "Uploaded JCL CBT PDFs"
   },
   {
     "id": "jcl-021",
     "category": "Beverages",
     "difficulty": "Easy",
-    "question": "JCL it is acceptable to serve a pax drink at his/her tray table when he/she not at the seat. True or false?",
+    "question": "In JCL, is it acceptable to serve a passenger's drink on the tray table when the passenger is not at the seat?",
     "options": [
       "True",
       "False"
@@ -304,7 +304,7 @@ window.QUESTION_POOL = [
     "id": "jcl-022",
     "category": "Meal Service",
     "difficulty": "Medium",
-    "question": "Flights where there is satay service and pax requests for nuts instead crew should utilise?",
+    "question": "On flights with satay service, if a passenger requests nuts instead, what should the crew use?",
     "options": [
       "Dry Heat, 15 minutes with foil partially open at the stick end",
       "Dry heat for 4-6 minutes",
@@ -322,9 +322,9 @@ window.QUESTION_POOL = [
     "question": "During table clearance after main course in JCL tray service crew should?",
     "options": [
       "Clear the tray, leaving behind the linen and glasses",
-      "Dry Heat, 15 minutes with foil partially open at the stick end",
-      "Top right of the tray",
-      "Dry heat for 4-6 minutes"
+      "Clear the tray, including the linen, but leave the glasses",
+      "Leave the tray until the entire meal service is completed",
+      "Clear only the main course dish and leave the tray in place"
     ],
     "answer": 0,
     "explanation": "Correct answer: Clear the tray, leaving behind the linen and glasses.",
@@ -337,9 +337,9 @@ window.QUESTION_POOL = [
     "question": "Serving sake, check with pax preference for?",
     "options": [
       "Room temperature, warm or chilled sake",
-      "Vintage",
-      "Wine Glass",
-      "Water Glass"
+      "Whether the passenger prefers still or sparkling sake",
+      "Whether the passenger wants sake with ice",
+      "Whether the passenger prefers sake in a wine glass or water glass"
     ],
     "answer": 0,
     "explanation": "Correct answer: Room temperature, warm or chilled sake.",
@@ -362,7 +362,7 @@ window.QUESTION_POOL = [
     "id": "jcl-026",
     "category": "JCL CBT",
     "difficulty": "Medium",
-    "question": "Past issues of newspapers are available on request?",
+    "question": "Which past issues of newspapers are available on request?",
     "options": [
       "Custard made with cream",
       "Straits Times and Business Times",
@@ -379,10 +379,10 @@ window.QUESTION_POOL = [
     "difficulty": "Medium",
     "question": "Polenta dish prepared using?",
     "options": [
-      "Dry heat for 4-6 minutes",
+      "Semolina",
       "Cornmeal",
-      "Top right of the tray",
-      "Dry Heat, 15 minutes with foil partially open at the stick end"
+      "Mascarpone",
+      "Breadcrumbs"
     ],
     "answer": 1,
     "explanation": "Correct answer: Cornmeal.",
@@ -392,22 +392,22 @@ window.QUESTION_POOL = [
     "id": "jcl-028",
     "category": "Beverages",
     "difficulty": "Hard",
-    "question": "During cheese and fruit course, crew should offer pax?",
+    "question": "During the cheese and fruit course, what should crew offer the passenger?",
     "options": [
-      "Vintage",
-      "Wine Glass",
-      "Water Glass",
-      "Selection of wine if he is taking cheese and present the fruit basket to passenger and allow him to pick up the fruit himself"
+      "A selection of wines with the cheese, and present the fruit basket for the passenger to choose fruit",
+      "Only port wine, and pre-select fruit for the passenger",
+      "Only coffee or tea, followed by fruit if requested",
+      "Cheese first, then fruit later only if the passenger asks"
     ],
-    "answer": 3,
-    "explanation": "Correct answer: Selection of wine if he is taking cheese and present the fruit basket to passenger and allow him to pick up the fruit himself.",
+    "answer": 0,
+    "explanation": "Correct answer: A selection of wines with the cheese, and present the fruit basket for the passenger to choose fruit.",
     "source": "Uploaded JCL CBT PDFs"
   },
   {
     "id": "jcl-029",
     "category": "Meal Service",
     "difficulty": "Medium",
-    "question": "The Cheese Mascarpone is used in dessert?",
+    "question": "Mascarpone cheese is used in which dessert?",
     "options": [
       "Tiramisu",
       "Top right of the tray",
@@ -435,12 +435,12 @@ window.QUESTION_POOL = [
     "id": "jcl-031",
     "category": "Food Preparation",
     "difficulty": "Medium",
-    "question": "Which of the following are dry heat cooking?",
+    "question": "Which of the following is a dry-heat cooking method?",
     "options": [
-      "Heated in oven for 4 minutes",
+      "Steaming",
       "Broiling and searing",
-      "Water Glass",
-      "Wrapping food in paper and baking in the oven"
+      "Poaching",
+      "Boiling"
     ],
     "answer": 1,
     "explanation": "Correct answer: Broiling and searing.",
@@ -463,22 +463,22 @@ window.QUESTION_POOL = [
     "id": "jcl-033",
     "category": "Beverages",
     "difficulty": "Medium",
-    "question": "Wine glasses are used?",
+    "question": "Wine glasses are used for serving which beverages?",
     "options": [
-      "Vintage",
-      "Wine Glass",
-      "Water Glass",
-      "Serving wine and port"
+      "Water and juice",
+      "Champagne only",
+      "Brandy and liqueurs",
+      "Wine and port"
     ],
     "answer": 3,
-    "explanation": "Correct answer: Serving wine and port.",
+    "explanation": "Correct answer: Wine and port.",
     "source": "Uploaded JCL CBT PDFs"
   },
   {
     "id": "jcl-034",
     "category": "Meal Service",
     "difficulty": "Medium",
-    "question": "Which flight sectors are slippers and tube socks to be preset on pax seat?",
+    "question": "For which flight sectors should slippers and tube socks be preset on the passenger's seat?",
     "options": [
       "Top right of the tray",
       "For flight sectors above 5 hours",
@@ -506,22 +506,22 @@ window.QUESTION_POOL = [
     "id": "jcl-036",
     "category": "Beverages",
     "difficulty": "Medium",
-    "question": "When preparing a double espresso crew should?",
+    "question": "When preparing a double espresso, what should the crew do?",
     "options": [
-      "Water Glass",
-      "use two separate espresso pods and serve it in a coffee tea cup",
-      "Wine Glass",
-      "Vintage"
+      "Use one espresso pod and serve it in a water glass",
+      "Use two separate espresso pods and serve it in a coffee/tea cup",
+      "Use one espresso pod and top it up with hot water",
+      "Use two espresso pods and serve it in a wine glass"
     ],
     "answer": 1,
-    "explanation": "Correct answer: use two separate espresso pods and serve it in a coffee tea cup.",
+    "explanation": "Correct answer: Use two separate espresso pods and serve it in a coffee/tea cup.",
     "source": "Uploaded JCL CBT PDFs"
   },
   {
     "id": "jcl-037",
     "category": "Meal Service",
     "difficulty": "Medium",
-    "question": "For express meal service crew should heat up the main courses selected by pax?",
+    "question": "For express meal service, when should crew heat up the main courses selected by passengers?",
     "options": [
       "Dry heat for 4-6 minutes",
       "Dry Heat, 15 minutes with foil partially open at the stick end",
@@ -549,12 +549,12 @@ window.QUESTION_POOL = [
     "id": "jcl-039",
     "category": "Meal Service",
     "difficulty": "Medium",
-    "question": "Which of the following statement is not true?",
+    "question": "Which of the following statements is NOT true?",
     "options": [
       "All BTC meals are created by the ICP chefs",
-      "Dry Heat, 15 minutes with foil partially open at the stick end",
-      "Dry heat for 4-6 minutes",
-      "Top right of the tray"
+      "BTC requests must be made at least 24 hours before departure",
+      "Past issues of The Straits Times and Business Times are available on request",
+      "Panna cotta is a custard made with cream"
     ],
     "answer": 0,
     "explanation": "Correct answer: All BTC meals are created by the ICP chefs.",
@@ -567,9 +567,9 @@ window.QUESTION_POOL = [
     "question": "Which one of the following principles is not considered when recommending wine with food?",
     "options": [
       "Temperature of dish",
-      "Wine Glass",
-      "Water Glass",
-      "Vintage"
+      "Weight or richness of the food",
+      "Texture of the food",
+      "Cooking method and sauce used"
     ],
     "answer": 0,
     "explanation": "Correct answer: Temperature of dish.",
@@ -581,12 +581,12 @@ window.QUESTION_POOL = [
     "difficulty": "Medium",
     "question": "How many SIA Wine consultants?",
     "options": [
-      "Water Glass",
-      "Wine Glass",
-      "Vintage",
-      "3"
+      "2",
+      "3",
+      "4",
+      "5"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Correct answer: 3.",
     "source": "Uploaded JCL CBT PDFs"
   },
@@ -594,14 +594,14 @@ window.QUESTION_POOL = [
     "id": "jcl-042",
     "category": "Meal Service",
     "difficulty": "Medium",
-    "question": "Peanut sauce satay heat?",
+    "question": "How long should satay peanut sauce be heated?",
     "options": [
-      "Dry Heat, 15 minutes with foil partially open at the stick end",
+      "10 minutes",
+      "15 minutes",
       "20 minutes",
-      "Top right of the tray",
-      "Dry heat for 4-6 minutes"
+      "25 minutes"
     ],
-    "answer": 1,
+    "answer": 2,
     "explanation": "Correct answer: 20 minutes.",
     "source": "Uploaded JCL CBT PDFs"
   },
@@ -609,14 +609,14 @@ window.QUESTION_POOL = [
     "id": "jcl-043",
     "category": "Meal Service",
     "difficulty": "Medium",
-    "question": "Garnishes for satay?",
+    "question": "What are the garnishes served with satay?",
     "options": [
-      "Dry heat for 4-6 minutes",
-      "Dry Heat, 15 minutes with foil partially open at the stick end",
-      "Top right of the tray",
-      "Onions and cucumber"
+      "Onions and cucumber",
+      "Tomato and lettuce",
+      "Carrot and celery",
+      "Pickles and onions"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Correct answer: Onions and cucumber.",
     "source": "Uploaded JCL CBT PDFs"
   },
@@ -624,12 +624,12 @@ window.QUESTION_POOL = [
     "id": "jcl-044",
     "category": "Meal Service",
     "difficulty": "Medium",
-    "question": "Most vegetables used for in-flight meals are first?",
+    "question": "Most vegetables used for in-flight meals are first ______.",
     "options": [
       "blanched",
-      "Top right of the tray",
-      "Dry Heat, 15 minutes with foil partially open at the stick end",
-      "Dry heat for 4-6 minutes"
+      "roasted",
+      "steamed",
+      "deep-fried"
     ],
     "answer": 0,
     "explanation": "Correct answer: blanched.",
@@ -639,12 +639,12 @@ window.QUESTION_POOL = [
     "id": "jcl-045",
     "category": "Beverages",
     "difficulty": "Medium",
-    "question": "On Japanese routes sake is served?",
+    "question": "On Japanese routes, sake is served in?",
     "options": [
-      "Vintage",
-      "Wine Glass",
+      "Wine glass",
+      "Water glass",
       "Sake bottle and cup",
-      "Water Glass"
+      "Champagne flute"
     ],
     "answer": 2,
     "explanation": "Correct answer: Sake bottle and cup.",
@@ -654,14 +654,14 @@ window.QUESTION_POOL = [
     "id": "jcl-046",
     "category": "JCL CBT",
     "difficulty": "Medium",
-    "question": "Panna cotta is type of?",
+    "question": "Panna cotta is a type of?",
     "options": [
-      "Soak in ice water",
-      "Straits Times and Business Times",
       "Custard made with cream",
-      "24 Hours before departure"
+      "Fruit stew",
+      "White sauce",
+      "Cornmeal dish"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Correct answer: Custard made with cream.",
     "source": "Uploaded JCL CBT PDFs"
   },
@@ -671,13 +671,13 @@ window.QUESTION_POOL = [
     "difficulty": "Medium",
     "question": "Pre-bowled ice cream is served with?",
     "options": [
-      "Cover and Medium round plate",
-      "Water Glass",
-      "saucer and table spoon",
-      "Wine Glass"
+      "Saucer and tablespoon",
+      "Cover and medium round plate",
+      "Dessert fork and saucer",
+      "Large bowl and underliner"
     ],
-    "answer": 2,
-    "explanation": "Correct answer: saucer and table spoon.",
+    "answer": 0,
+    "explanation": "Correct answer: Saucer and tablespoon.",
     "source": "Uploaded JCL CBT PDFs"
   },
   {
@@ -686,12 +686,12 @@ window.QUESTION_POOL = [
     "difficulty": "Medium",
     "question": "Planning and creating exotic signature dishes exclusively for SIA comes under the purview of?",
     "options": [
-      "Soak in ice water",
-      "Straits Times and Business Times",
+      "Cabin crew supervisors",
       "International Culinary Panel Chefs",
-      "24 Hours before departure"
+      "Ground catering teams",
+      "Station managers"
     ],
-    "answer": 2,
+    "answer": 1,
     "explanation": "Correct answer: International Culinary Panel Chefs.",
     "source": "Uploaded JCL CBT PDFs"
   },
@@ -712,12 +712,12 @@ window.QUESTION_POOL = [
     "id": "jcl-050",
     "category": "Meal Service",
     "difficulty": "Medium",
-    "question": "How are indian mints offered to pax on India flights?",
+    "question": "How are Indian mints offered to passengers on India flights?",
     "options": [
       "Placed in a dessert bowl and offered with pralines",
-      "Top right of the tray",
-      "Dry Heat, 15 minutes with foil partially open at the stick end",
-      "Dry heat for 4-6 minutes"
+      "Placed on a side plate with cheese",
+      "Served in a butter dish",
+      "Offered with satay"
     ],
     "answer": 0,
     "explanation": "Correct answer: Placed in a dessert bowl and offered with pralines.",
@@ -755,12 +755,12 @@ window.QUESTION_POOL = [
     "difficulty": "Medium",
     "question": "Cafe Royale is coffee with?",
     "options": [
-      "Water Glass",
-      "Wine Glass",
-      "Vintage",
-      "Brandy"
+      "Brandy",
+      "Whisky",
+      "Rum",
+      "Baileys"
     ],
-    "answer": 3,
+    "answer": 0,
     "explanation": "Correct answer: Brandy.",
     "source": "Uploaded JCL CBT PDFs"
   },
@@ -768,12 +768,12 @@ window.QUESTION_POOL = [
     "id": "jcl-054",
     "category": "Meal Service",
     "difficulty": "Hard",
-    "question": "When taking main course order, crew should personalise the approach by ascertaining beforehand?",
+    "question": "When taking the main course order, crew should personalise the approach by first ascertaining?",
     "options": [
       "Quantity of meals catered, main ingredients, method of preparation, sauces and accompaniments",
-      "Dry Heat, 15 minutes with foil partially open at the stick end",
-      "Top right of the tray",
-      "Dry heat for 4-6 minutes"
+      "Passenger passport details and destination",
+      "Only the number of meals catered",
+      "Whether bread has already been served"
     ],
     "answer": 0,
     "explanation": "Correct answer: Quantity of meals catered, main ingredients, method of preparation, sauces and accompaniments.",
@@ -835,12 +835,12 @@ window.QUESTION_POOL = [
     "id": "jcl-059",
     "category": "Meal Service",
     "difficulty": "Medium",
-    "question": "Croissant and garlic bread heated on dry heat?",
+    "question": "How long should croissants and garlic bread be heated on dry heat?",
     "options": [
       "4 minutes",
-      "Top right of the tray",
-      "Dry heat for 4-6 minutes",
-      "Dry Heat, 15 minutes with foil partially open at the stick end"
+      "6 minutes",
+      "10 minutes",
+      "15 minutes"
     ],
     "answer": 0,
     "explanation": "Correct answer: 4 minutes.",
@@ -850,12 +850,12 @@ window.QUESTION_POOL = [
     "id": "jcl-060",
     "category": "Meal Service",
     "difficulty": "Hard",
-    "question": "When serving cereal during breakfast service, crew should offer pax choice of?",
+    "question": "When serving cereal during breakfast service, what should crew offer?",
     "options": [
       "Full cream or skimmed milk, sugar and tablespoon if required",
-      "Top right of the tray",
-      "Dry Heat, 15 minutes with foil partially open at the stick end",
-      "Dry heat for 4-6 minutes"
+      "Only full cream milk",
+      "Yoghurt and honey",
+      "Bread and butter"
     ],
     "answer": 0,
     "explanation": "Correct answer: Full cream or skimmed milk, sugar and tablespoon if required.",
@@ -878,45 +878,45 @@ window.QUESTION_POOL = [
     "id": "jcl-062",
     "category": "Meal Service",
     "difficulty": "Medium",
-    "question": "Indian flights, naan and roti that are meant for Indian meals are to be offered?",
+    "question": "On Indian flights, naan and roti meant for Indian meals should be offered:",
     "options": [
-      "Dry heat for 4-6 minutes",
-      "Top right of the tray",
-      "Together with main course on a side plate",
-      "Dry Heat, 15 minutes with foil partially open at the stick end"
+      "Before the main course as an appetiser",
+      "Together with the main course on a side plate",
+      "Only on passenger request after the meal",
+      "With dessert service"
     ],
-    "answer": 2,
-    "explanation": "Correct answer: Together with main course on a side plate.",
+    "answer": 1,
+    "explanation": "Correct answer: Together with the main course on a side plate.",
     "source": "Uploaded JCL CBT PDFs"
   },
   {
     "id": "jcl-063",
     "category": "Beverages",
     "difficulty": "Medium",
-    "question": "Sparkling wines undergoing traditional methode champenoise go through?",
+    "question": "Sparkling wines made using the traditional méthode champenoise go through:",
     "options": [
-      "Vintage",
-      "Water Glass",
-      "two fermentation processes",
-      "Wine Glass"
+      "One fermentation process only",
+      "Two fermentation processes",
+      "Fermentation only after bottling is completed",
+      "No fermentation after grape pressing"
     ],
-    "answer": 2,
-    "explanation": "Correct answer: two fermentation processes.",
+    "answer": 1,
+    "explanation": "Correct answer: Two fermentation processes.",
     "source": "Uploaded JCL CBT PDFs"
   },
   {
     "id": "jcl-064",
     "category": "Cabin Procedures",
     "difficulty": "Hard",
-    "question": "Seat resets for JCL Weber seats are done by?",
+    "question": "How are JCL Weber seats reset?",
     "options": [
-      "On request basis",
-      "Water Glass",
-      "First pressing the attendant-call-cancel button then simultaneously pressing the TTL and lie-flat buttons on the seat control panel",
-      "4"
+      "Press the TTL button only",
+      "Press the lie-flat button only",
+      "First press the attendant-call-cancel button, then simultaneously press the TTL and lie-flat buttons on the seat control panel",
+      "Reset can only be done from the cabin control panel"
     ],
     "answer": 2,
-    "explanation": "Correct answer: First pressing the attendant-call-cancel button then simultaneously pressing the TTL and lie-flat buttons on the seat control panel.",
+    "explanation": "Correct answer: First press the attendant-call-cancel button, then simultaneously press the TTL and lie-flat buttons on the seat control panel.",
     "source": "Uploaded JCL CBT PDFs"
   },
   {
@@ -949,26 +949,26 @@ window.QUESTION_POOL = [
     "id": "jcl-067",
     "category": "Food Preparation",
     "difficulty": "Medium",
-    "question": "En Papillote method cooking by?",
+    "question": "En papillote is a cooking method that involves:",
     "options": [
-      "Wrapping food in paper and baking in the oven",
-      "Food container is covered and does not have any metallic content; oven is clean",
-      "Broiling and searing",
-      "Heated in oven for 4 minutes"
+      "Wrapping food in paper and baking it in the oven",
+      "Cooking food uncovered over direct flame",
+      "Deep-frying food in hot oil",
+      "Steaming food in a metal container"
     ],
     "answer": 0,
-    "explanation": "Correct answer: Wrapping food in paper and baking in the oven.",
+    "explanation": "Correct answer: Wrapping food in paper and baking it in the oven.",
     "source": "Uploaded JCL CBT PDFs"
   },
   {
     "id": "jcl-068",
     "category": "Beverages",
     "difficulty": "Medium",
-    "question": "Which following wine producing countries is considered Old World?",
+    "question": "Which of the following wine-producing countries is considered Old World?",
     "options": [
-      "Water Glass",
-      "Wine Glass",
-      "Vintage",
+      "Australia",
+      "Chile",
+      "United States",
       "Portugal"
     ],
     "answer": 3,
@@ -979,12 +979,12 @@ window.QUESTION_POOL = [
     "id": "jcl-069",
     "category": "Beverages",
     "difficulty": "Medium",
-    "question": "Mango lassi, offered in JCL on Indian flights served?",
+    "question": "On Indian flights, how is mango lassi served in JCL?",
     "options": [
       "Chilled in a water glass",
-      "Wine Glass",
-      "Vintage",
-      "Water Glass"
+      "Warm in a wine glass",
+      "At room temperature in a champagne flute",
+      "Over ice in a whiskey tumbler"
     ],
     "answer": 0,
     "explanation": "Correct answer: Chilled in a water glass.",
@@ -994,30 +994,30 @@ window.QUESTION_POOL = [
     "id": "jcl-070",
     "category": "Beverages",
     "difficulty": "Medium",
-    "question": "Drinks for tech crew can be served in?",
+    "question": "Drinks for technical crew can be served in:",
     "options": [
-      "United States",
-      "Water Glass",
-      "Vintage",
-      "Wine Glass"
+      "A water glass",
+      "A wine glass",
+      "A champagne flute",
+      "A brandy goblet"
     ],
-    "answer": 1,
-    "explanation": "Correct answer: Water Glass.",
+    "answer": 0,
+    "explanation": "Correct answer: A water glass.",
     "source": "Uploaded JCL CBT PDFs"
   },
   {
     "id": "jcl-071",
     "category": "Meal Service",
     "difficulty": "Medium",
-    "question": "During satay trolley service both choices of satay are displayed in two separate?",
+    "question": "During satay trolley service, both satay choices are displayed in two separate:",
     "options": [
-      "Tin Foil Pans",
-      "Dry Heat, 15 minutes with foil partially open at the stick end",
-      "Top right of the tray",
-      "Dry heat for 4-6 minutes"
+      "Tin foil pans",
+      "Sauce boats",
+      "Bread baskets",
+      "Dessert bowls"
     ],
     "answer": 0,
-    "explanation": "Correct answer: Tin Foil Pans.",
+    "explanation": "Correct answer: Tin foil pans.",
     "source": "Uploaded JCL CBT PDFs"
   },
   {
@@ -1037,12 +1037,12 @@ window.QUESTION_POOL = [
     "id": "jcl-073",
     "category": "Beverages",
     "difficulty": "Medium",
-    "question": "Which one of the following names is NOT a grape variety?",
+    "question": "Which of the following is NOT a grape variety?",
     "options": [
       "Chianti",
-      "Water Glass",
-      "Wine Glass",
-      "Vintage"
+      "Merlot",
+      "Chardonnay",
+      "Cabernet Sauvignon"
     ],
     "answer": 0,
     "explanation": "Correct answer: Chianti.",
@@ -1065,14 +1065,14 @@ window.QUESTION_POOL = [
     "id": "jcl-075",
     "category": "JCL CBT",
     "difficulty": "Hard",
-    "question": "Veloute is a white sauce made from?",
+    "question": "Velouté is a white sauce made from:",
     "options": [
-      "Straits Times and Business Times",
-      "24 Hours before departure",
-      "Soak in ice water",
-      "Stock, butter and flour"
+      "Milk, butter and flour",
+      "Stock, butter and flour",
+      "Cream, cheese and egg yolk",
+      "Tomato, butter and flour"
     ],
-    "answer": 3,
+    "answer": 1,
     "explanation": "Correct answer: Stock, butter and flour.",
     "source": "Uploaded JCL CBT PDFs"
   },
@@ -1093,29 +1093,29 @@ window.QUESTION_POOL = [
     "id": "jcl-077",
     "category": "JCL CBT",
     "difficulty": "Medium",
-    "question": "Compote?",
+    "question": "What is a compote?",
     "options": [
-      "Soak in ice water",
-      "24 Hours before departure",
-      "Straits Times and Business Times",
-      "Fruit Stew"
+      "A fruit stew",
+      "A cream custard",
+      "A savoury stock",
+      "A bread garnish"
     ],
-    "answer": 3,
-    "explanation": "Correct answer: Fruit Stew.",
+    "answer": 0,
+    "explanation": "Correct answer: A fruit stew.",
     "source": "Uploaded JCL CBT PDFs"
   },
   {
     "id": "jcl-078",
     "category": "Cabin Procedures",
     "difficulty": "Medium",
-    "question": "On SIN-MNL flight JCL BMW?",
+    "question": "On SIN–MNL flights, JCL BMW is available on what basis?",
     "options": [
-      "Water Glass",
       "On request basis",
-      "Wine Glass",
-      "4"
+      "For all passengers automatically",
+      "Only during breakfast service",
+      "Only after take-off"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "Correct answer: On request basis.",
     "source": "Uploaded JCL CBT PDFs"
   },
@@ -1123,30 +1123,30 @@ window.QUESTION_POOL = [
     "id": "jcl-079",
     "category": "Equipment",
     "difficulty": "Medium",
-    "question": "Dishes served in JCL large bowl should be used with?",
+    "question": "Dishes served in the JCL large bowl should be presented with:",
     "options": [
-      "Water Glass",
-      "Wine Glass",
-      "saucer and table spoon",
-      "Cover and Medium round plate"
+      "A saucer and table spoon",
+      "A cover and medium round plate",
+      "A bread plate only",
+      "A side plate and butter dish"
     ],
-    "answer": 3,
-    "explanation": "Correct answer: Cover and Medium round plate.",
+    "answer": 1,
+    "explanation": "Correct answer: A cover and medium round plate.",
     "source": "Uploaded JCL CBT PDFs"
   },
   {
     "id": "jcl-080",
     "category": "Beverages",
     "difficulty": "Medium",
-    "question": "Wine that is strengthened with grape spirit or brandy to increase its alcohol level is known as?",
+    "question": "Wine strengthened with grape spirit or brandy to increase its alcohol level is known as:",
     "options": [
-      "Wine Glass",
-      "Water Glass",
-      "Vintage",
-      "fortified wine"
+      "Aromatized wine",
+      "Fortified wine",
+      "Sparkling wine",
+      "Table wine"
     ],
-    "answer": 3,
-    "explanation": "Correct answer: fortified wine.",
+    "answer": 1,
+    "explanation": "Correct answer: Fortified wine.",
     "source": "Uploaded JCL CBT PDFs"
   },
   {
@@ -1155,9 +1155,9 @@ window.QUESTION_POOL = [
     "difficulty": "Medium",
     "question": "In wine terms, full-bodied refers to wine with?",
     "options": [
-      "Water Glass",
-      "Vintage",
-      "Wine Glass",
+      "light and delicate flavors",
+      "high acidity and low alcohol",
+      "sweetness from residual sugar",
       "a higher percentage of alcohol content"
     ],
     "answer": 3,
@@ -1183,9 +1183,9 @@ window.QUESTION_POOL = [
     "difficulty": "Medium",
     "question": "The word appellation on a French wine label refers to?",
     "options": [
-      "Water Glass",
-      "Wine Glass",
-      "Vintage",
+      "the grape variety used",
+      "the year the wine was bottled",
+      "the sweetness level of the wine",
       "area or region where grape is grown"
     ],
     "answer": 3,
@@ -1209,15 +1209,15 @@ window.QUESTION_POOL = [
     "id": "jcl-085",
     "category": "Beverages",
     "difficulty": "Hard",
-    "question": "Sparkling wine traditional method champenoise includes?",
+    "question": "The traditional méthode champenoise for sparkling wine includes?",
     "options": [
-      "second fermentation with sugar and yeast added, bottle sealed, carbon dioxide release trapped in bottle and impurities removed",
-      "Vintage",
-      "Water Glass",
-      "Wine Glass"
+      "second fermentation with sugar and yeast added, bottle sealed, carbon dioxide trapped in bottle, and impurities removed",
+      "carbonation injected directly into the wine before bottling",
+      "fermentation in large tanks with no secondary fermentation in bottle",
+      "fortification with brandy to increase alcohol content"
     ],
     "answer": 0,
-    "explanation": "Correct answer: second fermentation with sugar and yeast added, bottle sealed, carbon dioxide release trapped in bottle and impurities removed.",
+    "explanation": "Correct answer: second fermentation with sugar and yeast added, bottle sealed, carbon dioxide trapped in bottle, and impurities removed.",
     "source": "Uploaded JCL CBT PDFs"
   },
   {
@@ -1227,9 +1227,9 @@ window.QUESTION_POOL = [
     "question": "Vermouth is?",
     "options": [
       "aromatized wine",
-      "Wine Glass",
-      "Vintage",
-      "Water Glass"
+      "fortified red wine",
+      "sparkling dessert wine",
+      "distilled grape spirit"
     ],
     "answer": 0,
     "explanation": "Correct answer: aromatized wine.",
@@ -1254,10 +1254,10 @@ window.QUESTION_POOL = [
     "difficulty": "Hard",
     "question": "True champagne is made by?",
     "options": [
-      "Wine Glass",
-      "Water Glass",
+      "carbonation added under pressure in a tank",
+      "blending still wines with grape spirit",
       "methode champenoise, second fermentation in bottle",
-      "Vintage"
+      "single fermentation in open vats"
     ],
     "answer": 2,
     "explanation": "Correct answer: methode champenoise, second fermentation in bottle.",
@@ -1270,9 +1270,9 @@ window.QUESTION_POOL = [
     "question": "The featured mixed drink Midsummer Breeze contains?",
     "options": [
       "orange juice, apple juice, pineapple juice and 7-Up",
-      "Water Glass",
-      "Wine Glass",
-      "Vintage"
+      "orange juice, soda water, lime juice and mint",
+      "pineapple juice, tonic water, lemon juice and ginger ale",
+      "apple juice, cranberry juice, Sprite and lime cordial"
     ],
     "answer": 0,
     "explanation": "Correct answer: orange juice, apple juice, pineapple juice and 7-Up.",
@@ -1284,10 +1284,10 @@ window.QUESTION_POOL = [
     "difficulty": "Medium",
     "question": "Cafe au lait is made up of?",
     "options": [
-      "Water Glass",
+      "black coffee with whipped cream",
       "2 espresso shots and hot milk with no froth",
-      "Wine Glass",
-      "Vintage"
+      "espresso with a small amount of milk foam",
+      "coffee with brandy and brown sugar"
     ],
     "answer": 1,
     "explanation": "Correct answer: 2 espresso shots and hot milk with no froth.",
@@ -1299,10 +1299,10 @@ window.QUESTION_POOL = [
     "difficulty": "Hard",
     "question": "Cafe Royal contains?",
     "options": [
-      "Water Glass",
-      "Vintage",
+      "coffee, cream and white sugar",
+      "espresso, hot milk and chocolate powder",
       "brandy, coffee and half a packet of brown sugar",
-      "Wine Glass"
+      "coffee, whisky and whipped cream"
     ],
     "answer": 2,
     "explanation": "Correct answer: brandy, coffee and half a packet of brown sugar.",
@@ -1314,10 +1314,10 @@ window.QUESTION_POOL = [
     "difficulty": "Medium",
     "question": "Hanakoireki, how many out of 5 compartment items in the bento box must be heated?",
     "options": [
-      "Dry heat for 4-6 minutes",
+      "Two",
       "Three",
-      "Dry Heat, 15 minutes with foil partially open at the stick end",
-      "Top right of the tray"
+      "Four",
+      "Five"
     ],
     "answer": 1,
     "explanation": "Correct answer: Three.",
@@ -1342,9 +1342,9 @@ window.QUESTION_POOL = [
     "difficulty": "Medium",
     "question": "For lunch, dinner and supper, Hanakoireki hot box consists of how many boxes?",
     "options": [
-      "Top right of the tray",
-      "Dry Heat, 15 minutes with foil partially open at the stick end",
-      "Dry heat for 4-6 minutes",
+      "1",
+      "3",
+      "4",
       "2"
     ],
     "answer": 3,
@@ -1357,10 +1357,10 @@ window.QUESTION_POOL = [
     "difficulty": "Medium",
     "question": "Hanakoireki hot box consists of?",
     "options": [
-      "Dry heat for 4-6 minutes",
+      "two hot and three cold items",
       "three hot and two cold items",
-      "Top right of the tray",
-      "Dry Heat, 15 minutes with foil partially open at the stick end"
+      "five hot items",
+      "one hot and four cold items"
     ],
     "answer": 1,
     "explanation": "Correct answer: three hot and two cold items.",
@@ -1372,10 +1372,10 @@ window.QUESTION_POOL = [
     "difficulty": "Hard",
     "question": "A full dinner meal service in JCL usually comprises of?",
     "options": [
-      "Dry Heat, 15 minutes with foil partially open at the stick end",
+      "main course, dessert and coffee or tea only",
       "hors d'oeuvres, main course, dessert, cheese and fruit and coffee or tea",
-      "Dry heat for 4-6 minutes",
-      "Top right of the tray"
+      "soup, salad, main course and juice only",
+      "main course, cheese and fruit only"
     ],
     "answer": 1,
     "explanation": "Correct answer: hors d'oeuvres, main course, dessert, cheese and fruit and coffee or tea.",
@@ -1388,9 +1388,9 @@ window.QUESTION_POOL = [
     "question": "Satay stick should be positioned at the?",
     "options": [
       "4 o'clock position when serving to passenger",
-      "Dry Heat, 15 minutes with foil partially open at the stick end",
-      "Dry heat for 4-6 minutes",
-      "Top right of the tray"
+      "12 o'clock position when serving to passenger",
+      "6 o'clock position when serving to passenger",
+      "9 o'clock position when serving to passenger"
     ],
     "answer": 0,
     "explanation": "Correct answer: 4 o'clock position when serving to passenger.",
@@ -1415,10 +1415,10 @@ window.QUESTION_POOL = [
     "difficulty": "Hard",
     "question": "When serving brunch, crew should offer?",
     "options": [
-      "Water Glass",
+      "juice to all passengers regardless of meal choice",
       "wines to pax having lunch main course and coffee or tea to those taking breakfast main course",
-      "Vintage",
-      "Wine Glass"
+      "only coffee or tea to all passengers",
+      "only wines to all passengers"
     ],
     "answer": 1,
     "explanation": "Correct answer: wines to pax having lunch main course and coffee or tea to those taking breakfast main course.",
@@ -1441,12 +1441,12 @@ window.QUESTION_POOL = [
     "id": "jcl-101",
     "category": "JCL CBT",
     "difficulty": "Medium",
-    "question": "For ad-hoc request of chilli sauce, crew are required to preset in?",
+    "question": "For ad-hoc requests for chilli sauce, crew are required to preset it in?",
     "options": [
-      "Soak in ice water",
+      "ramekin",
       "butter dish or chip",
-      "Straits Times and Business Times",
-      "24 Hours before departure"
+      "sauce boat",
+      "dessert bowl"
     ],
     "answer": 1,
     "explanation": "Correct answer: butter dish or chip.",
